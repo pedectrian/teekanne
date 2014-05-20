@@ -29,7 +29,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
             <?php if (onepage_get_option('onepage_slideimage1') != '') { ?>
                 <img  src="<?php echo onepage_get_option('onepage_slideimage1'); ?>" alt="Slide Image 1"/>
             <?php } else { ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" alt="slides img1">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/slide-1.png" alt="slides img1">
             <?php } ?>
 
             <div class="slider_text_container"><div class="container_24"><div class="grid_24">
