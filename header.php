@@ -40,11 +40,11 @@
         <div class="header_wrapper">
             <div class="container_24">
                 <div class="grid_24">
-                    <div class="grid_6 alpha">
+                    <div class="grid_3 alpha">
                         <div id="logo">
                             <a href="<?php echo home_url(); ?>"><img src="<?php if (onepage_get_option('onepage_logo') != '') { ?><?php echo onepage_get_option('onepage_logo'); ?><?php } else { ?><?php echo get_template_directory_uri(); ?>/images/logo.png<?php } ?>" alt="<?php bloginfo('name'); ?>" /></a></div>
                     </div>
-                    <div class="grid_18 omega">
+                    <div class="grid_21 omega">
                         <div id="MainNav">
                             <?php if (onepage_get_option('onepage_nav') != '') { ?><a href="#" class="mobile_nav closed"><?php echo stripslashes(onepage_get_option('onepage_nav')); ?><span></span></a>
                             <?php } else { ?> <a href="#" class="mobile_nav closed">Mobile Menu<span></span></a>

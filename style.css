@@ -30,6 +30,15 @@ custom.css and it will override the style in this file. You have been warned! :)
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'Myriad-Pro';
+    src: url('fonts/Myriad-Pro.eot');
+    src: url('fonts/Myriad-Pro.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Myriad-Pro.woff') format('woff'),
+        url('fonts/Myriad-Pro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -506,7 +515,7 @@ input[type="submit"].search-button:hover {
 }
 
 #logo {
-    padding-top:24px;
+    padding-top: 30px;
     height: 73px;
 }
 
@@ -615,7 +624,7 @@ input[type="submit"].search-button:hover {
 #menu .sf-menu li a {
     color: #fff;
     text-decoration: none;
-    padding: 36px 14px 30px 16px;
+    padding: 36px 0px 30px 16px;
     line-height: 28px;
 }
 #menu li.current-menu-item a, #menu li.current-menu-parent a, #menu li.current_page_parent a, #menu li a.selected, #menu li.current_page_item a {
@@ -883,13 +892,15 @@ input[type="submit"].search-button:hover {
 /*slider text*/
 .homepage_top_feature {
     background: url('images/top-slider.png') top left;
-    background-size: 100% auto;
-    padding: 30px 0;
+    background-size: 1440px 441px;
+    height: 440px;
+    padding: 0;
 }
 .homepage_top_feature img{
     height: 400px;
     margin: 0 auto;
     width: auto;
+    margin-top: 20px;
 }
 .slider_img_container {
     position: relative;
@@ -4081,4 +4092,160 @@ smaller than 320px
     p.fourzerofourerror{
         line-height: 41px;
     }
+}
+
+.front_block_2 {
+    background: url('images/front_block_2.png') top center no-repeat;
+    height: 550px;
+    background-size: 1440px;
+}
+.front_block_3 {
+    background: url('images/front_block_3.png') top center no-repeat;
+    height: 850px;
+    background-size: 1440px 850px;
+}
+.front_block_4 {
+    background: url('images/rest-layout.png') top center no-repeat;
+    height: 5550px;
+    background-size: 1440px;
+}
+#menu .sf-menu {
+    float: left;
+}
+#menu .sf-menu li a{
+    font-family: 'Myriad-Pro', serif !important;
+}
+#menu .sf-menu li a:after {
+    content: ' / ';
+    margin-left: 20px;
+}
+#menu .sf-menu li:last-child a:after {
+    content: '';
+    margin-left: 0;
+}
+.slides {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.slide {
+    position: relative;
+}
+.slide-1-text-left {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    width: 210px;
+    font-family: Adonisc, serif;
+}
+.slide-1-text-right {
+    position: absolute;
+    right: 0;
+    top: 100px;
+    width: 210px;
+    font-family: Adonisc, serif;
+}
+.slide-1-text-left p {
+    color: #FFF;
+    font-size: 14px;
+}
+.tea-list {
+    margin: 0;
+    padding: 0;
+}
+h2.list-title {
+    font-size: 24px;
+    font-family: Adonisc, serif;
+    color: #fff;
+}
+.tea-list li {
+    display: block;
+    margin-bottom: 5px;
+}
+.tea-list li a {
+    color: #FFF;
+    font-size: 15px;
+    text-decoration: underline;
+    font-family: Adonisc, serif;
+}
+.tea-list li a:hover,
+.tea-list li a.current {
+    text-decoration: none;
+}
+.red-button {
+    padding: 2px 15px 0;
+    color: #FFF;
+    font-family: 'Myriad-Pro', serif !important;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 35px;
+    background: #C12236;
+    display: inline-block;
+}
+.red-button:hover {
+    background: #b21b2e;
+}
+.number-one {
+    width: 1140px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.history-block {
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+.hb-1, .hb-2, .hb-3, .hb-4 {
+    position: absolute;
+    font-family: 'Myriad-Pro', serif !important;
+}
+.hb-1 {
+    top: 200px;
+    left: 75px;
+    width: 300px;
+    color: #333333;
+}
+.hb-2 {
+    top: 50px;
+    right: 0;
+    width: 700px;
+}
+.hb-3 {
+    top: 450px;
+    left: 200px;
+    width: 400px;
+    font-size: 13px;
+    color: #666;
+}
+.hb-4 {
+    top: 460px;
+    right: 200px;
+    width: 200px;
+}
+.hb-4 ul {
+    padding: 0;
+    margin: 0;
+}
+.hb-4 ul li{
+    display: block;
+}
+
+
+.adonisc {
+    font-family: Adonisc, serif;
+}
+.font-20 {
+    font-size: 20px;
+}
+.font-60 {
+    font-size: 60px;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.color-white {
+    color: #fff;
+}
+.text-center {
+    text-align: center;
 }

@@ -25,27 +25,37 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     <!-- **********************slider************************* -->
     <div class="homepage_top_feature">
         <div class="slider_img_container">
+            <div class="slides">
 
-            <?php if (onepage_get_option('onepage_slideimage1') != '') { ?>
-                <img  src="<?php echo onepage_get_option('onepage_slideimage1'); ?>" alt="Slide Image 1"/>
-            <?php } else { ?>
-                <img src="<?php echo get_template_directory_uri(); ?>/images/slide-1.png" alt="slides img1">
-            <?php } ?>
-
-            <div class="slider_text_container"><div class="container_24"><div class="grid_24">
-                        <?php if (onepage_get_option('onepage_sliderheading1') != '') { ?>
-                            <h2><a href="<?php echo onepage_get_option('onepage_Sliderlink1'); ?>"><?php echo onepage_get_option('onepage_sliderheading1'); ?></a></h2>
-                        <?php } else { ?>
-                            <h2><a><?php _e('A bene placito.', 'onepage'); ?></a></h2>
-                        <?php } ?>
-                        <?php if (onepage_get_option('onepage_sliderdes1') != '') { ?>
-                            <p><a><?php echo onepage_get_option('onepage_sliderdes1'); ?></a></p>
-                        <?php } else { ?>
-
-                            <p><a><?php _e('You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.', 'onepage'); ?></a></p>
-
-                        <?php } ?>
-                    </div></div></div>
+                <div class="slide">
+                    <div class="slide-1-text-left">
+                        <p>В коллекцию высококачественных
+                        черных чаев Teekanne входят
+                        самые популярные в мире
+                        чайные бленды/купажи.<p>
+                        <p>
+                        Насладитесь насыщенным вкусом
+                        черного чая Teekanne и ощутите
+                        гармонию с природой.</p>
+                        <a href="#" class="red-button">ПОСМОТРЕТЬ ЛИНЕЙКУ</a>
+                    </div>
+                    <div class="slide-1-text-right">
+                        <h2 class="list-title">НАШИ ЧАИ:</h2>
+                        <ul class="tea-list">
+                            <li><a class="current" href="#">Черный</a></li>
+                            <li><a href="#">Зеленый</a></li>
+                            <li><a href="#">Фруктовый и травяной</a></li>
+                            <li><a href="#">Десертный</a></li>
+                            <li><a href="#">Сезонный</a></li>
+                        </ul>
+                    </div>
+                    <?php if (onepage_get_option('onepage_slideimage1') != '') { ?>
+                        <img  src="<?php echo onepage_get_option('onepage_slideimage1'); ?>" alt="Slide Image 1"/>
+                    <?php } else { ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/slide-1.png" alt="slides img1">
+                    <?php } ?>
+                </div>
+            </div>
         </div>
 
         <!-- slider 8 ends --------------------------------------------------------------->
@@ -53,6 +63,64 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
 
     </div>
     <div class="clear"></div>
+    <div class="front_block_2">
+        <div class="number-one">
+            <div class="adonisc font-60 text-center color-white">№1</div>
+            <div class="adonisc font-20 uppercase text-center color-white">В ЕВРОПЕ СРЕДИ ФРУКТОВЫХ И ТРАВЯНЫХ ЧАЕВ.<br/>
+                ТЕПЕРЬ И В РОССИИ.</div>
+        </div>
+    </div>
+    <div class="front_block_3">
+        <div class="history-block">
+            <div class="hb-1">
+                История происхождения чая<br />
+                История происхождения чайного напитка
+            </div>
+            <div class="hb-2">
+                <p>Помимо различных сортов чая, таких как черный, зеленый, белый, красный,
+                существует бесчисленное множество чайных напитков, которые также называют
+                фруктовыми или травяными чаями.</p>
+
+                <p>Черный или зеленый чай готовится из листьев чайного куста, ботаническое
+                название которого «камелия китайская» (camellia sinensis). Чайный куст
+                традиционно разделяется на два подвида китайский (camellia sinensis var.
+                sinensis) и ассамский (camellia sinensis var. assamica).</p>
+
+                <p>Чайный напиток представляет собой смесь из цветов, трав, фруктов и пряностей.
+                Не стоит путать его с традиционным ароматизированным чаем. Травяной или
+                фруктовый чай не содержит чайные листья и кофеин, а потому отлично подходит
+                и взрослым, и детям.</p>
+            </div>
+            <div class="hb-3">
+                <p>Несмотря на то, что чай появился в Китае почти 5000 лет назад, прошло
+                несколько тысяч лет прежде чем он добрался до других уголков земли.
+                Сегодня чай выращивают в промышленных масштабах более чем в 30
+                странах, где экспорт этого продукта вносит значительный вклад в
+                экономику сельского хозяйства.</p>
+
+                <p>Основные регионы, где выращивают чай расположены между 43о
+                северной широты и 30о южной широты, ведь чайному дереву требуется
+                обилие солнечного света. Но оно не выносит застоя воды под корнями, а
+                потому чайные плантации в основном расположены на горных склонах
+                высотой до 3000 метров.</p>
+
+                <p>Мировой лидер по производству чая – Китай (производит до 1,3 миллиона
+                тонн в год). На втором месте Индия, затем Африка, Цейлон (Шри-Ланка с
+                1977 года) и Индонезия.</p>
+            </div>
+            <div class="hb-4">
+                <ul class="history-list">
+                    <li><a class="current" href="#">Истоки</a></li>
+                    <li><a href="#">Сбор урожая</a></li>
+                    <li><a href="#">Обработка</a></li>
+                    <li><a href="#">Упаковка</a></li>
+                    <li><a href="#">Контроль качества</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="front_block_4">
+    </div>
     <!-- ***********************Featured Text Area Block************************* -->
     <div class="featured_text_area default_bg">
 
