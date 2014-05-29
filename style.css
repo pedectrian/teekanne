@@ -4093,7 +4093,9 @@ smaller than 320px
         line-height: 41px;
     }
 }
-
+body {
+    background: #f8f3ef;
+}
 .front_block_2 {
     background: url('images/front_block_2.png') top center no-repeat;
     height: 550px;
@@ -4105,7 +4107,16 @@ smaller than 320px
     background-size: 1440px 850px;
 }
 .front_block_4 {
-    background: url('images/rest-layout.png') top center no-repeat;
+    padding-top: 5px;
+    background: url('images/red-string-bg.png') top center repeat-x;
+    height: 175px;
+}
+.front_block_5 {
+    padding-top: 50px;
+    height: 400px;
+}
+.front_block_10 {
+    background: url('images/rest-layout.png') center -760px no-repeat;
     height: 5550px;
     background-size: 1440px;
 }
@@ -4230,12 +4241,34 @@ h2.list-title {
     display: block;
 }
 
+.fb-5-wrap {
+    width: 1040px;
+    margin: 0 auto;
+    height: 400px;
+    background: url('images/fb-5-bg.png') 415px 00px no-repeat;
+}
+.fb-5-left {
+    width: 375px;
+    color: #f8f3ef;
+    font-size: 12px;
+}
+
+
 
 .adonisc {
     font-family: Adonisc, serif;
 }
+.myriad {
+    font-family: 'Myriad-Pro', serif !important;
+}
 .font-20 {
     font-size: 20px;
+}
+.font-25 {
+    font-size: 25px;
+}
+.font-50 {
+    font-size: 50px;
 }
 .font-60 {
     font-size: 60px;
@@ -4245,6 +4278,9 @@ h2.list-title {
 }
 .color-white {
     color: #fff;
+}
+.color-red {
+    color: #c12236;
 }
 .text-center {
     text-align: center;

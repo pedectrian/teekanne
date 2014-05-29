@@ -120,6 +120,32 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
         </div>
     </div>
     <div class="front_block_4">
+        <div class="adonisc font-60 text-center color-white">100%</div>
+        <div class="adonisc font-25 uppercase text-center color-white">НАТУРАЛЬНЫХ ИНГРЕДИЕНТОВ — <br/>
+            ВАШ ПУТЬ К ГАРМОНИИ С ПРИРОДОЙ </div>
+    </div>
+    <div class="front_block_5">
+        <div class="fb-5-wrap">
+            <div class="fb-5-left">
+                <h1 class="font-50 color-red">О компании</h1>
+                <p>Since 1882, family-owned company TEEKANNE has been
+                developing the best traditions of tea business in Germany and
+                other countries worldwide.</p>
+
+                <p>More than 130 years of experience and knowhow in tea making
+                result in a wide range of highly indulgent teas that spans from
+                classic black teas to new and innovative tea creations in all tea
+                segments.</p>
+
+                <p>Today, TEEKANNE belongs to the world’s leading tea
+                manufacturers and constantly develops new tea creations and
+                most indulgent taste experiences using natural ingredients,
+                which are carefully selected by our own tea experts from the
+                best origins in the world.</p>
+            </div>
+        </div>
+    </div>
+    <div class="front_block_10">
     </div>
     <!-- ***********************Featured Text Area Block************************* -->
     <div class="featured_text_area default_bg">
