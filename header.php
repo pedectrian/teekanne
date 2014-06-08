@@ -25,7 +25,7 @@
             Cufon.replace('.myriad-pro-bold', { fontFamily: 'Myriad Pro Bold', hover: true });
         </script>
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
+        <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v=0.2">
 <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
@@ -46,10 +46,13 @@
                     </div>
                     <div class="grid_21 omega">
                         <div id="MainNav">
+                            <div class="hover-menu">
+                                <span class="menu-box">Меню</span>
                             <?php if (onepage_get_option('onepage_nav') != '') { ?><a href="#" class="mobile_nav closed"><?php echo stripslashes(onepage_get_option('onepage_nav')); ?><span></span></a>
                             <?php } else { ?> <a href="#" class="mobile_nav closed">Mobile Menu<span></span></a>
-<?php } ?>
-<?php onepage_nav(); ?> 
+                            <?php } ?>
+                            <?php onepage_nav(); ?>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -29,17 +29,6 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
 
                 <div class="slide">
                     <div class="slide-1-text-left">
-                        <p>В коллекцию высококачественных
-                        черных чаев Teekanne входят
-                        самые популярные в мире
-                        чайные бленды/купажи.<p>
-                        <p>
-                        Насладитесь насыщенным вкусом
-                        черного чая Teekanne и ощутите
-                        гармонию с природой.</p>
-                        <a href="#" class="red-button">ПОСМОТРЕТЬ ЛИНЕЙКУ</a>
-                    </div>
-                    <div class="slide-1-text-right">
                         <h2 class="list-title">НАШИ ЧАИ:</h2>
                         <ul class="tea-list">
                             <li><a class="current" href="#">Черный</a></li>
@@ -48,6 +37,18 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                             <li><a href="#">Десертный</a></li>
                             <li><a href="#">Сезонный</a></li>
                         </ul>
+                    </div>
+                    <div class="slide-1-text-right">
+                        <div class="adonisc font-25 color-red">Черный чай</div>
+                        <p>Коллекция черных чаев TEEKANNE -
+                            содержит самые популярные в мире
+                            чайные вкусы, как чистые, так и с
+                            натуральными ароматическими
+                            добавками, придающими чаю новые
+                            неожиданные оттенки. Всё это делает
+                            чаи TEEKANNE по-настоящему
+                            уникальными.<p>
+                        <a href="#" class="red-button">Узнать больше о продукте</a>
                     </div>
                     <?php if (onepage_get_option('onepage_slideimage1') != '') { ?>
                         <img  src="<?php echo onepage_get_option('onepage_slideimage1'); ?>" alt="Slide Image 1"/>
@@ -65,50 +66,64 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     <div class="clear"></div>
     <div class="front_block_2">
         <div class="number-one">
-            <div class="adonisc font-60 text-center color-white">№1</div>
-            <div class="adonisc font-20 uppercase text-center color-white">В ЕВРОПЕ СРЕДИ ФРУКТОВЫХ И ТРАВЯНЫХ ЧАЕВ.<br/>
-                ТЕПЕРЬ И В РОССИИ.</div>
+            <div class="adonisc font-60 text-center color-white">7 МЛРД</div>
+            <div class="adonisc font-20 uppercase text-center color-white">ПАКЕТИКОВ ИДЕАЛЬНОГО ЧАЯ В ГОД.</div>
+            <div class="adonisc font-35 uppercase text-center color-white">ВЫБЕРИ СВОЙ</div>
         </div>
     </div>
     <div class="front_block_3">
         <div class="history-block">
-            <div class="hb-1">
-                История происхождения чая<br />
-                История происхождения чайного напитка
+            <div class="hb-1 myriad">
+                <div class="adonisc font-30 uppercase color-red">
+                    ЧАЙ /<br />
+                ФРУКТОВЫЙ<br />
+                И ТРАВЯНОЙ ЧАЙ
+                </div>
+                <a href="#" class="active">История происхождения чая</a><br />
+                <a href="#">История происхождения фруктового
+                и травяного чая</a>
             </div>
-            <div class="hb-2">
-                <p>Помимо различных сортов чая, таких как черный, зеленый, белый, красный,
-                существует бесчисленное множество чайных напитков, которые также называют
-                фруктовыми или травяными чаями.</p>
+            <div class="hb-2 myriad">
+                <p>Черный или зеленый чай готовится из листьев чайного куста, ботаническое название
+                    которого «камелия китайская» (camellia sinensis). Чайный куст традиционно
+                    разделяется на два подвида китайский (camellia sinensis var. sinensis) и ассамский
+                    (camellia sinensis var. assamica).</p>
 
-                <p>Черный или зеленый чай готовится из листьев чайного куста, ботаническое
-                название которого «камелия китайская» (camellia sinensis). Чайный куст
-                традиционно разделяется на два подвида китайский (camellia sinensis var.
-                sinensis) и ассамский (camellia sinensis var. assamica).</p>
-
-                <p>Чайный напиток представляет собой смесь из цветов, трав, фруктов и пряностей.
-                Не стоит путать его с традиционным ароматизированным чаем. Травяной или
-                фруктовый чай не содержит чайные листья и кофеин, а потому отлично подходит
-                и взрослым, и детям.</p>
+                <p>
+                    Чайный напиток представляет собой смесь из цветов, трав, фруктов и пряностей. Не
+                    стоит путать его с традиционным ароматизированным чаем. Травяной или фруктовый
+                    чай не содержит чайные листья и кофеин, а потому отлично подходит и взрослым, и
+                    детям. </p>
             </div>
-            <div class="hb-3">
-                <p>Несмотря на то, что чай появился в Китае почти 5000 лет назад, прошло
-                несколько тысяч лет прежде чем он добрался до других уголков земли.
-                Сегодня чай выращивают в промышленных масштабах более чем в 30
-                странах, где экспорт этого продукта вносит значительный вклад в
-                экономику сельского хозяйства.</p>
+            <div class="hb-3 myriad">
+                <div class="adonisc font-45 color-red">Путь от плантации<br />
+                до чашки</div>
+                <p >Несмотря на то, что чай появился в Китае почти 5000 лет назад, прошло несколько
+                    тысяч лет прежде чем он добрался до других уголков земли. Основные регионы,
+                    где выращивают чай расположены между 43о северной широты и 30о южной
+                    широты, ведь чайному дереву требуется обилие солнечного света. Но оно не
+                    выносит застоя воды под корнями, а потому чайные плантации в основном
+                    расположены на горных склонах высотой до 3000 метров.</p>
 
-                <p>Основные регионы, где выращивают чай расположены между 43о
-                северной широты и 30о южной широты, ведь чайному дереву требуется
-                обилие солнечного света. Но оно не выносит застоя воды под корнями, а
-                потому чайные плантации в основном расположены на горных склонах
-                высотой до 3000 метров.</p>
+                <p>Мировой лидер по производству чая – Китай (производит до 1,3 миллиона тонн в
+                    год). На втором месте Индия, затем Африка, Цейлон (Шри-Ланка с 1977 года) и
+                    Индонезия.<br>
+                    Самый знаменитый индийский чай произрастает на севере, на высокогорных
+                    плантациях Дарджилинга и на северо-востоке, в Ассаме, который является самым
+                    крупным в мире регионом по выращиванию чая. Характерные отличия этого чая –
+                    его темный цвет и оригинальный вкус. Также основными регионами по
+                    выращиванию чая являются Дуары, индийская провинция к западу от Ассама,
+                    Нилгири, на юго-западе Индии и Формоза (ныне Тайвань), известная своим
+                    непревзойденным чаем улун.</p>
 
-                <p>Мировой лидер по производству чая – Китай (производит до 1,3 миллиона
-                тонн в год). На втором месте Индия, затем Африка, Цейлон (Шри-Ланка с
-                1977 года) и Индонезия.</p>
+                <a href="#" class="red-button">Читать полностью</a>
             </div>
             <div class="hb-4">
+                <div class="adonisc font-30 uppercase color-red">
+                    ЧАЙ /<br />
+                    ФРУКТОВЫЙ<br />
+                    И ТРАВЯНОЙ ЧАЙ
+                </div>
                 <ul class="history-list">
                     <li><a class="current" href="#">Истоки</a></li>
                     <li><a href="#">Сбор урожая</a></li>
@@ -126,25 +141,72 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     </div>
     <div class="front_block_5">
         <div class="fb-5-wrap">
-            <div class="fb-5-left">
-                <h1 class="font-50 color-red">О компании</h1>
-                <p>Since 1882, family-owned company TEEKANNE has been
-                developing the best traditions of tea business in Germany and
-                other countries worldwide.</p>
+            <div class="fb-5-left myriad">
+                <h1 class="font-50 color-red">О компании <img style="margin-left: 10px;" src="<?php echo get_stylesheet_directory_uri();?>/images/about-company-icon.png"></h1>
+                <p>С 1882 года компания TEEKANNE развивала традицию
+                    ведения чайного бизнеса в Германии и других странах по
+                    всему миру.</p>
 
-                <p>More than 130 years of experience and knowhow in tea making
-                result in a wide range of highly indulgent teas that spans from
-                classic black teas to new and innovative tea creations in all tea
-                segments.</p>
+                <p>
+                    За 130 лет успешной работы компания создала широкий
+                    ассортимент деликатных чаев от классических черных до
+                    новых чайных сенсаций.
+                </p>
 
-                <p>Today, TEEKANNE belongs to the world’s leading tea
-                manufacturers and constantly develops new tea creations and
-                most indulgent taste experiences using natural ingredients,
-                which are carefully selected by our own tea experts from the
-                best origins in the world.</p>
+                <p>
+                    Сегодня TEEKANNE является одной из ведущих компаний по
+                    производству чая и продолжает работать над созданием
+                    новых чайных вариаций, с помощью исключительно
+                    натуральных ингредиентов, тщательно отобранных нашими
+                    специалистами по всему миру.</p>
             </div>
         </div>
     </div>
+
+    <div class="front_block_6">
+        <div class="fb-6-wrap">
+            <div class="fb-6-left">
+                <h1 class="adonisc font-50 color-white">История</h1>
+                <p class="color-white">More than 130 years of success prove that members of our
+                    family-owned group of companies consistently displayed
+                    the right vision, foresight and innovative courage to ensure
+                    the thriving of Teekanne. </p>
+            </div>
+            <div class="fb-6-right color-white adonisc">
+                <p class="color-white adonisc">It all started with the innovative idea of our founders
+                    Rudolf Anders and Eugen Nissle to sell the natural
+                    product tea in a blended and packaged form. Thus, tea
+                    as a branded product with a consistent premium
+                    quality was born.</p>
+
+                <p class="color-white adonisc">Join us on a journey through Teekanne’s history and
+                    find out about the milestones of our corporate history.</p>
+            </div>
+
+            <div class="fb-6-slider">
+                <div class="fb-6-col-1"></div>
+                <div class="fb-6-col-1"></div>
+                <div class="fb-6-col-1"></div>
+
+                <div class="red-shadow"></div>
+            </div>
+        </div>
+    </div>
+    <div class="front_block_7">
+        <div class="fb-7-wrap">
+            <div class="fb-7-left">
+                <h1 class="adonisc font-50 color-red" style="line-height: 50px;">Гарантия качества от производителя</h1>
+            </div>
+            <div class="fb-7-right adonisc">
+                <p class="color-grey adonisc" style="margin-top: 50px">В TEEKANNE главное – насладиться ароматной чашкой чая. Для этого
+                    наши специалисты объездили весь мир в поисках лучших ингредиентов,
+                    а разработчики создали восхитительные купажи в наших современных
+                    лабораториях, чтобы бережно упакованный в пакетики чай TEEKANNE
+                    радовал Вас своим великолепным вкусом.</p>
+            </div>
+        </div>
+    </div>
+
     <div class="front_block_10">
     </div>
     <!-- ***********************Featured Text Area Block************************* -->

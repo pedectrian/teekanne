@@ -510,13 +510,17 @@ input[type="submit"].search-button:hover {
 .header_wrapper {
     z-index: 1000;
     width: 100%;
-    background: #c12236;
+    background: #be2c37 url('images/red-bg.png');
     font-family: 'adonisc', serif;
+
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 #logo {
-    padding-top: 30px;
-    height: 73px;
+    padding: 10px 0 7px 0;
+    height: 40px;
 }
 
 #logo img {
@@ -533,6 +537,22 @@ input[type="submit"].search-button:hover {
 .wrapper_menu {
     margin: 0;
     float: right;
+}
+.menu-box {
+    display: inline-block;
+    color: #FFF;
+    text-transform: uppercase;
+    padding: 0px 35px 0 10px;
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    margin: 15px 0 0 360px;
+    line-height: 23px;
+    background: url('images/menu-bg.png') no-repeat 69px 6px;
+}
+.menu-box:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #be2c37;
 }
 .menu_container {
     margin: 0;
@@ -599,7 +619,6 @@ input[type="submit"].search-button:hover {
     vertical-align: top;
 }
 #menu .sf-menu li {
-    height: 97px;
     margin: 0;
     position: relative;
     display: inline-block;
@@ -624,7 +643,7 @@ input[type="submit"].search-button:hover {
 #menu .sf-menu li a {
     color: #fff;
     text-decoration: none;
-    padding: 36px 0px 30px 16px;
+    padding: 15px 0px 15px 16px;
     line-height: 28px;
 }
 #menu li.current-menu-item a, #menu li.current-menu-parent a, #menu li.current_page_parent a, #menu li a.selected, #menu li.current_page_item a {
@@ -901,6 +920,7 @@ input[type="submit"].search-button:hover {
     margin: 0 auto;
     width: auto;
     margin-top: 20px;
+    margin-left: -65px;
 }
 .slider_img_container {
     position: relative;
@@ -4103,7 +4123,7 @@ body {
 }
 .front_block_3 {
     background: url('images/front_block_3.png') top center no-repeat;
-    height: 850px;
+    height: 950px;
     background-size: 1440px 850px;
 }
 .front_block_4 {
@@ -4115,8 +4135,19 @@ body {
     padding-top: 50px;
     height: 400px;
 }
+
+.front_block_6 {
+    padding-top: 50px;
+    height: 700px;
+    background: #c12236;
+}
+
+.front_block_7 {
+    padding-top: 5px;
+    background: #faf8f9;
+}
 .front_block_10 {
-    background: url('images/rest-layout.png') center -760px no-repeat;
+    background: url('images/rest-bg.png') center 0px no-repeat;
     height: 5550px;
     background-size: 1440px;
 }
@@ -4151,14 +4182,14 @@ body {
 }
 .slide-1-text-right {
     position: absolute;
-    right: 0;
+    right: 65px;
     top: 100px;
-    width: 210px;
+    width: 253px;
     font-family: Adonisc, serif;
 }
-.slide-1-text-left p {
+.slide-1-text-right p {
     color: #FFF;
-    font-size: 14px;
+    font-size: 13px;
 }
 .tea-list {
     margin: 0;
@@ -4168,20 +4199,21 @@ h2.list-title {
     font-size: 24px;
     font-family: Adonisc, serif;
     color: #fff;
+    margin-bottom: 10px;
 }
 .tea-list li {
     display: block;
-    margin-bottom: 5px;
 }
 .tea-list li a {
     color: #FFF;
     font-size: 15px;
-    text-decoration: underline;
     font-family: Adonisc, serif;
+    display: block;
+    padding: 5px 10px;
 }
 .tea-list li a:hover,
 .tea-list li a.current {
-    text-decoration: none;
+    background: #be2c37 url('images/red-bg.png');
 }
 .red-button {
     padding: 2px 15px 0;
@@ -4190,11 +4222,11 @@ h2.list-title {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 35px;
-    background: #C12236;
+    background: #be2c37 url('images/red-bg.png');
     display: inline-block;
 }
 .red-button:hover {
-    background: #b21b2e;
+    background: #be2c37 url('images/red-bg.png');
 }
 .number-one {
     width: 1140px;
@@ -4211,10 +4243,18 @@ h2.list-title {
     font-family: 'Myriad-Pro', serif !important;
 }
 .hb-1 {
-    top: 200px;
+    top: 50px;
     left: 75px;
     width: 300px;
     color: #333333;
+}
+.hb-1 a {
+    padding-left: 15px;
+    margin-top: 5px;
+}
+.hb-1 a:hover,
+.hb-1 a.active {
+    background: url('images/link-current.png') no-repeat 0 5px;
 }
 .hb-2 {
     top: 50px;
@@ -4222,16 +4262,22 @@ h2.list-title {
     width: 700px;
 }
 .hb-3 {
-    top: 450px;
-    left: 200px;
-    width: 400px;
+    top: 325px;
+    left: 227px;
+    width: 467px;
     font-size: 13px;
     color: #666;
 }
 .hb-4 {
-    top: 460px;
-    right: 200px;
-    width: 200px;
+    top: 335px;
+    right: 135px;
+    width: 249px;
+}
+.hb-4 a {
+    text-decoration: underline;
+}
+.hb-4 a:hover {
+    text-decoration: none;
 }
 .hb-4 ul {
     padding: 0;
@@ -4253,35 +4299,77 @@ h2.list-title {
     font-size: 12px;
 }
 
+.fb-6-wrap {
+    width: 1130px;
+    margin: 0 auto;
+    height: 400px;
+}
 
+.fb-6-left,
+.fb-6-right {
+    width: 450px;
+    margin-right: 125px;
+    font-size: 14px;
+    display: inline-block;
+}
+.fb-6-slider {
+    position: relative;
+    background: #fff;
+    background: url('images/fb-6-slider.png') no-repeat 0 30px;
+    background-size: 1100px 500px;
+    height: 530px;
+}
+.fb-7-wrap {
+    width: 1130px;
+    margin: 0 auto;
 
+    background: url('images/fb-7-bg.png') top center repeat-x;
+    height: 700px;
+}
+
+.fb-7-left,
+.fb-7-right {
+    width: 450px;
+    margin-right: 125px;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.fb-6-right,
+.fb-7-right {
+    margin-right: 0;
+}
+.red-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('images/red-opaque.png') repeat-y left top;
+    background-size: 1100px 500px;
+    width: 1100px;
+    height: 500px;
+}
 .adonisc {
     font-family: Adonisc, serif;
 }
 .myriad {
     font-family: 'Myriad-Pro', serif !important;
 }
-.font-20 {
-    font-size: 20px;
-}
-.font-25 {
-    font-size: 25px;
-}
-.font-50 {
-    font-size: 50px;
-}
-.font-60 {
-    font-size: 60px;
-}
-.uppercase {
-    text-transform: uppercase;
-}
-.color-white {
-    color: #fff;
-}
-.color-red {
-    color: #c12236;
-}
+.font-20 {font-size: 20px;}
+.font-25 {font-size: 25px;}
+.font-30 {font-size: 30px;}
+.font-35 {font-size: 35px;}
+.font-45 {font-size: 45px;}
+.font-50 {font-size: 50px;}
+.font-60 {font-size: 60px;}
+
+.uppercase {text-transform: uppercase;}
+
+.color-white {color: #fff;}
+.color-red {color: #be2c37;}
+.color-grey {color: #666666}
 .text-center {
     text-align: center;
+}
+#menu {
+    display: none;
 }
