@@ -508,7 +508,7 @@ input[type="submit"].search-button:hover {
 /*	3. #Header logo and menu Styles
 /*-----------------------------------------------------------------------------------*/
 .header_wrapper {
-    z-index: 1000;
+    z-index: 999999;
     width: 100%;
     background: #be2c37 url('images/red-bg.png');
     font-family: 'adonisc', serif;
@@ -4213,7 +4213,7 @@ body {
     top: 100px;
     width: 210px;
     font-family: Adonisc, serif;
-    z-index: 99999;
+    z-index: 99998;
 }
 .slide-1-text-right {
     position: absolute;
