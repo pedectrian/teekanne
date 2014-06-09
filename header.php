@@ -11,7 +11,9 @@
         } ?>
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
+        <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-1.11.1.min.js" type="text/javascript"></script>
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/cufon-yui.js" type="text/javascript"></script>
+        <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/index.js" type="text/javascript"></script>
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/myriad-pro.cufonfonts.js" type="text/javascript"></script>
         <script type="text/javascript">
             Cufon.replace('.myriad-pro-regular', { fontFamily: 'Myriad Pro Regular', hover: true });

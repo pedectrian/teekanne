@@ -25,19 +25,20 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     <!-- **********************slider************************* -->
     <div class="homepage_top_feature">
         <div class="slider_img_container">
-            <div class="slides">
-
-                <div class="slide">
-                    <div class="slide-1-text-left">
-                        <h2 class="list-title">НАШИ ЧАИ:</h2>
-                        <ul class="tea-list">
-                            <li><a class="current" href="#">Черный</a></li>
-                            <li><a href="#">Зеленый</a></li>
-                            <li><a href="#">Фруктовый и травяной</a></li>
-                            <li><a href="#">Десертный</a></li>
-                            <li><a href="#">Сезонный</a></li>
-                        </ul>
-                    </div>
+            <div class="slides-wrapper">
+                <a class="slide-left"></a>
+                <a class="slide-right"></a>
+                <div class="slider-menu">
+                    <h2 class="list-title">НАШИ ЧАИ:</h2>
+                    <ul class="tea-list">
+                        <li><a class="current" href="#">Черный</a></li>
+                        <li><a href="#">Зеленый</a></li>
+                        <li><a href="#">Фруктовый и травяной</a></li>
+                        <li><a href="#">Десертный</a></li>
+                        <li><a href="#">Сезонный</a></li>
+                    </ul>
+                </div>
+                <div class="slide current" data-slide-id="1">
                     <div class="slide-1-text-right">
                         <div class="adonisc font-25 color-red">Черный чай</div>
                         <p>Коллекция черных чаев TEEKANNE -
@@ -50,11 +51,13 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                             уникальными.<p>
                         <a href="#" class="red-button">Узнать больше о продукте</a>
                     </div>
-                    <?php if (onepage_get_option('onepage_slideimage1') != '') { ?>
-                        <img  src="<?php echo onepage_get_option('onepage_slideimage1'); ?>" alt="Slide Image 1"/>
-                    <?php } else { ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/slide-1.png" alt="slides img1">
-                    <?php } ?>
+                    <img  src="<?php echo get_template_directory_uri(); ?>/images/slide-1.png" alt="slides img1">
+                </div>
+<!--                    --><?php //if (onepage_get_option('onepage_slideimage1') != '') { ?>
+<!--                        <img  src="--><?php //echo onepage_get_option('onepage_slideimage1'); ?><!--" alt="Slide Image 1"/>-->
+<!--                    --><?php //} else { ?>
+<!--                        -->
+<!--                    --><?php //} ?>
                 </div>
             </div>
         </div>
@@ -70,6 +73,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
             <div class="adonisc font-20 uppercase text-center color-white">ПАКЕТИКОВ ИДЕАЛЬНОГО ЧАЯ В ГОД.</div>
             <div class="adonisc font-35 uppercase text-center color-white">ВЫБЕРИ СВОЙ</div>
         </div>
+        <div class="fb-2-woman"></div>
     </div>
     <div class="front_block_3">
         <div class="history-block">
