@@ -1202,6 +1202,9 @@ p.services_box_rect_para{
     overflow:hidden;
     color: #d8d4d4;
     padding-bottom:50px;
+    height: 60px;
+
+    background: #be2c37 url('images/footer.png') center center no-repeat;
 }
 .footer ul {
     padding: 0 0 0 0;
@@ -4146,11 +4149,18 @@ body {
     padding-top: 5px;
     background: #faf8f9;
 }
-.front_block_10 {
-    background: url('images/rest-bg.png') center 0px no-repeat;
-    height: 5550px;
-    background-size: 1440px;
+
+.front_block_8 {
+    padding-top: 30px;
+    background: url('images/where-to-by-bg.png') top center repeat-x;
+    height: 210px;
 }
+
+.front_block_9 {
+    padding-top: 5px;
+    background: #f8f3ef;
+}
+
 #menu .sf-menu {
     float: left;
 }
@@ -4327,6 +4337,70 @@ h2.list-title {
     height: 700px;
 }
 
+
+.fb-9-wrap {
+    width: 1130px;
+    margin: 0 auto;
+    background: url('images/world-wide-bg.png') -35px -2px repeat-x;
+    height: 1400px;
+    background-size: 1130px;
+}
+.fb-9-left {
+    width: 550px;
+    padding-top: 45px;
+}
+.fb-9-left-2 {
+    width: 750px;
+    padding-top: 45px;
+    position: relative;
+}
+.fb-9-left-2 input[type='text'] {
+    background: #E2DFDD;
+    border-radius: 0;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 15px;
+    color: #666;
+    font-size: 20px;
+    line-height: 20px;
+    width: 500px;
+    margin-top: 20px;
+    display: block;
+}
+.fb-9-left-2 input[type='submit'] {
+    background: #be2c37;
+    border-radius: 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 530px;
+    margin-top: 20px;
+    display: block;
+}
+.fb-9-fullwidth {
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top: 2px solid #c9b8b7;
+}
+.fb-9-fullwidth p{
+    color: #3e090f;
+    font-size: 10px;
+}
+.always-on-touch {
+    position: absolute;
+    top: 135px;
+    left: 600px;
+    width: 400px;
+}
+.always-on-touch p{
+    font-size: 13px;
+    color: #666666;
+}
 .fb-7-left,
 .fb-7-right {
     width: 450px;
@@ -4361,6 +4435,7 @@ h2.list-title {
 .font-45 {font-size: 45px;}
 .font-50 {font-size: 50px;}
 .font-60 {font-size: 60px;}
+.font-65 {font-size: 65px;}
 
 .uppercase {text-transform: uppercase;}
 
