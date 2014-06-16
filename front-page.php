@@ -31,15 +31,15 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 <div class="slider-menu">
                     <h2 class="list-title">НАШИ ЧАИ:</h2>
                     <ul class="tea-list">
-                        <li><a class="current" href="#">Черный</a></li>
-                        <li><a href="#">Зеленый</a></li>
-                        <li><a href="#">Фруктовый и травяной</a></li>
-                        <li><a href="#">Десертный</a></li>
-                        <li><a href="#">Сезонный</a></li>
+                        <li><a class="current" data-slide-id="1">Черный</a></li>
+                        <li><a data-slide-id="2">Зеленый</a></li>
+                        <li><a data-slide-id="3">Фруктовый и травяной</a></li>
+                        <li><a data-slide-id="4">Десертный</a></li>
+                        <li><a data-slide-id="5">Сезонный</a></li>
                     </ul>
                 </div>
                 <div class="slide current" data-slide-id="1">
-                    <div class="slide-1-text-right">
+                    <div class="slide-text-right">
                         <div class="adonisc font-25 color-red">Черный чай</div>
                         <p>Коллекция черных чаев TEEKANNE -
                             содержит самые популярные в мире
@@ -50,6 +50,21 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                             чаи TEEKANNE по-настоящему
                             уникальными.<p>
                         <a href="#" class="red-button">Узнать больше о продукте</a>
+                    </div>
+                    <img  src="<?php echo get_template_directory_uri(); ?>/images/slide-1.png" alt="slides img1">
+                </div>
+                <div class="slide" data-slide-id="2">
+                    <div class="slide-text-right">
+                        <div class="adonisc font-25 color-red">Зеленый чай</div>
+                        <p>Коллекция черных чаев TEEKANNE -
+                            содержит самые популярные в мире
+                            чайные вкусы, как чистые, так и с
+                            натуральными ароматическими
+                            добавками, придающими чаю новые
+                            неожиданные оттенки. Всё это делает
+                            чаи TEEKANNE по-настоящему
+                            уникальными.<p>
+                            <a href="#" class="red-button">Узнать больше о продукте</a>
                     </div>
                     <img  src="<?php echo get_template_directory_uri(); ?>/images/slide-1.png" alt="slides img1">
                 </div>
@@ -68,8 +83,13 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     </div>
     <div class="clear"></div>
     <div class="front_block_2">
-        <div class="number-one">
+        <div class="slide-bottom-description current" data-slide-id="1">
             <div class="adonisc font-60 text-center color-white">7 МЛРД</div>
+            <div class="adonisc font-20 uppercase text-center color-white">ПАКЕТИКОВ ИДЕАЛЬНОГО ЧАЯ В ГОД.</div>
+            <div class="adonisc font-35 uppercase text-center color-white">ВЫБЕРИ СВОЙ</div>
+        </div>
+        <div class="slide-bottom-description" data-slide-id="2">
+            <div class="adonisc font-60 text-center color-white">107 МЛРД</div>
             <div class="adonisc font-20 uppercase text-center color-white">ПАКЕТИКОВ ИДЕАЛЬНОГО ЧАЯ В ГОД.</div>
             <div class="adonisc font-35 uppercase text-center color-white">ВЫБЕРИ СВОЙ</div>
         </div>

@@ -40,6 +40,25 @@
         <!-- Header condition2 starts here -->	
 
         <div class="header_wrapper">
+            <div class="search-bar">
+                <div class="container_24">
+                    <div class="grid_24">
+                        <div class="grid_1 alpha">
+                            &nbsp;
+                        </div>
+
+                        <div class="grid_22">
+                            <input type="text" class="search-input" placeholder="Что вы ищете?" />
+                            <input type="submit" class="search-btn" value=""/>
+                            <input type="button" class="search-cancel" value=""/>
+                        </div>
+
+                        <div class="grid_1 omega">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container_24">
                 <div class="grid_24">
                     <div class="grid_3 alpha">
@@ -55,7 +74,12 @@
                             <?php } ?>
                             <?php onepage_nav(); ?>
                             </div>
+
+                            <div class="search">
+                                <div class="search-icon"></div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="clear"></div>
