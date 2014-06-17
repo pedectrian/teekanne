@@ -31,7 +31,9 @@
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>?v=0.2">
 <?php wp_head(); ?>
     </head>
+
     <body <?php body_class(); ?>>
+        <img style="display: none;" class="share-image" src="<?php echo get_stylesheet_directory_uri();?>/images/social_share.png">
         <!-- *********************Header Logo and menu Wrapper************************************** -->
 
 
@@ -74,7 +76,6 @@
                         </div>
 
                         <div class="grid_16 share-links myriad">
-                            <img style="display: none;" class="share-image" src="<?php echo get_stylesheet_directory_uri();?>/images/social_share.png">
                             Поделиться с друзьями в:
                             <a class="share-button" onclick="Share.facebook(document.location.href,'ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE.','<?php echo get_stylesheet_directory_uri();?>/images/social_share.png','TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')">Fb.com</a>/
                             <a class="share-button" onclick="Share.vkontakte(document.location.href,'ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE.','<?php echo get_stylesheet_directory_uri();?>/images/social_share.png','TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')">Vk.com</a>/
