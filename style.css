@@ -930,7 +930,7 @@ input[type="submit"].search-button:hover {
 }
 .slider_img_container {
     position: relative;
-    background: url('images/tea-table-bg.png') bottom center repeat-x;
+    background: url('images/wood_pattern.jpg') bottom center repeat-x;
     height: 440px;
     background-size: 1440px 75px;
 }
@@ -4496,7 +4496,39 @@ h2.list-title {
 
     cursor: pointer;
 }
+.share {
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
+.fb-share-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('images/fb_socialshare.png') no-repeat;
+
+    cursor: pointer;
+}
+.vk-share-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: url('images/vk_socialshare.png') no-repeat;
+
+    cursor: pointer;
+}
 .search-bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 57px;
+    background: #BE2C37;
+    display: none;
+
+    z-index: 99999;
+}
+.share-bar {
     position: absolute;
     left: 0;
     top: 0;
@@ -4530,7 +4562,8 @@ h2.list-title {
     border: none !important;
 }
 
-.search-cancel {
+.search-cancel,
+.share-cancel{
     background: url('images/search-cancel.png') no-repeat;
     cursor: pointer;
     border-radius: 0 !important;
@@ -4540,9 +4573,32 @@ h2.list-title {
     border: none !important;
     box-shadow: none !important;
 }
+.share-cancel {
+    margin: -1px 0 0 10px !important;
+}
 .slide {
     display: none;
 }
 .slide.current {
     display: block;
+}
+
+.searchform {
+    padding: 0 !important;
+    border: none !important;
+}
+.share-links {
+    line-height: 57px;
+    color: #fff;
+    font-size: 13px;
+}
+.share-button {
+    color: #fff;
+    display: inline-block;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.share-button:hover {
+    text-decoration: underline;
 }

@@ -14,6 +14,7 @@
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-1.11.1.min.js" type="text/javascript"></script>
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/cufon-yui.js" type="text/javascript"></script>
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/index.js" type="text/javascript"></script>
+        <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/social-share.js" type="text/javascript"></script>
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/myriad-pro.cufonfonts.js" type="text/javascript"></script>
         <script type="text/javascript">
             Cufon.replace('.myriad-pro-regular', { fontFamily: 'Myriad Pro Regular', hover: true });
@@ -48,12 +49,42 @@
                         </div>
 
                         <div class="grid_22">
-                            <input type="text" class="search-input" placeholder="Что вы ищете?" />
-                            <input type="submit" class="search-btn" value=""/>
-                            <input type="button" class="search-cancel" value=""/>
+                            <form role="search" method="get" class="searchform" action="<?php echo home_url('/'); ?>">
+                                <input type="text" class="search-input" placeholder="Что вы ищете?" onfocus="if (this.value == 'Search') {
+                                                                                                                this.value = '';
+                                                                                                            }" onblur="if (this.value == '') {
+                                                                                                                this.value = 'Что вы ищете?';
+                                                                                                            }" name="s" />
+                                <input type="submit" class="search-btn" value=""/>
+                                <input type="button" class="search-cancel" value=""/>
+                            </form>
                         </div>
 
                         <div class="grid_1 omega">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="share-bar">
+                <div class="container_24">
+                    <div class="grid_24">
+                        <div class="grid_6 alpha">
+                            &nbsp;
+                        </div>
+
+                        <div class="grid_16 share-links myriad">
+                            Поделиться с друзьями в:
+                            <a class="share-button" onclick="Share.facebook(document.location.href,'ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE.','IMG_PATH','TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')">Fb.com</a>/
+                            <a class="share-button" onclick="Share.vkontakte(document.location.href,'ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE.','IMG_PATH','TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')">Vk.com</a>/
+                            <a class="share-button" onclick="Share.odnoklassniki(document.location.href,'DESC')">Odnoklassniki.ru</a>/
+                            <a class="share-button" onclick="Share.twitter(document.location.href,'ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE.')">Twitter.com</a>/
+                            <a class="share-button" onclick="Share.gplus(document.location.href)">GooglePlus</a>
+
+                            <input type="button" class="share-cancel" value=""/>
+                        </div>
+
+                        <div class="grid_2 omega">
                             &nbsp;
                         </div>
                     </div>
@@ -77,6 +108,10 @@
 
                             <div class="search">
                                 <div class="search-icon"></div>
+                            </div>
+                            <div class="share">
+                                <div class="vk-share-icon"></div>
+                                <div class="fb-share-icon"></div>
                             </div>
                         </div>
 

@@ -13,7 +13,7 @@ $(document).ready(function(){
             text:  currentSlide.find('.slide-text-right'),
             descr: $('.slide-bottom-description.current')
         };
-        
+
         var nextSlide = $('.slide').filter(function(){return $(this).attr('data-slide-id') == (parseInt(currentSlide.attr('data-slide-id')) + 1)});
         var nextDescr = $('.slide-bottom-description').filter(function(){return $(this).attr('data-slide-id') == (parseInt(currentSlide.attr('data-slide-id')) + 1)});
 
@@ -46,4 +46,14 @@ $(document).ready(function(){
     $('.search-cancel').on('click', function(){
         $('.search-bar').fadeOut('slow');
     });
+
+
+    $('.share-cancel').on('click', function(){
+        $('.share-bar').fadeOut('slow');
+    });
+
+    $('.fb-share-icon, .vk-share-icon').on('click', function(){
+        $('.share-bar').fadeIn('slow');
+    });
+
 });
