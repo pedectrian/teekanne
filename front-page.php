@@ -191,10 +191,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
         <div class="fb-6-wrap">
             <div class="fb-6-left">
                 <h1 class="adonisc font-50 color-white">История</h1>
-                <p class="color-white">More than 130 years of success prove that members of our
-                    family-owned group of companies consistently displayed
-                    the right vision, foresight and innovative courage to ensure
-                    the thriving of Teekanne. </p>
+                <p class="color-white">За свою 130-летнюю историю семейная компания TEEKANNE успела доказать, что именно ясное видение, грамотный расчет и инновационный подход являются причинами ее успеха и  процветания. </p>
             </div>
             <div class="fb-6-right color-white adonisc">
                 <p class="color-white adonisc">It all started with the innovative idea of our founders
@@ -203,16 +200,60 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     as a branded product with a consistent premium
                     quality was born.</p>
 
-                <p class="color-white adonisc">Join us on a journey through Teekanne’s history and
-                    find out about the milestones of our corporate history.</p>
+                <p class="color-white adonisc">Мы предлагаем Вам подробнее узнать об истории компании TEEKANNE: </p>
             </div>
 
             <div class="fb-6-slider">
-                <div class="fb-6-col-1"></div>
-                <div class="fb-6-col-1"></div>
-                <div class="fb-6-col-1"></div>
+                <?php
+                    $history = new WP_Query( array ( 'orderby' => 'title', 'order' => 'asc', 'category_name' => 'history' ) );
+
+                    if ( $history->have_posts() ) {
+                        $num = 0;
+                        $current = ' current';
+
+
+                        while ( $history->have_posts() ) {
+                            $history->the_post();
+
+                            if ($num%3 == 0) {
+                                echo '<div class="history-slides' . $current . '">';
+                                $current = '';
+                            }
+
+                            echo '<div class="fb-6-col-1">';
+                                if ( has_post_thumbnail() ) {
+                                    echo "<div class='history-image'>";
+                                        the_post_thumbnail('history_thumbnail');
+                                    echo "</div>";
+                                }
+                                echo "<div class='history-title'>" . get_the_title() . "</div>";
+                                echo "<div class='history-description'>" . get_the_content() . "</div>";
+
+                            echo '</div>';
+                            $num++;
+                            if ($num == 3 || $num > 3) {
+                                echo '</div>';
+                                $num = 0;
+                            }
+
+                        }
+
+                        if ($num < 3) {
+                            echo '</div>';
+                        }
+                    }
+
+                ?>
 
                 <div class="red-shadow"></div>
+                <div class="history-controls">
+                    <a class="hc-icon-1 current"></a>
+                    <a class="hc-icon-2"></a>
+                    <a class="hc-icon-3"></a>
+                    <a class="hc-icon-4"></a>
+                    <a class="hc-icon-5"></a>
+                    <a class="hc-icon-6"></a>
+                </div>
             </div>
         </div>
     </div>

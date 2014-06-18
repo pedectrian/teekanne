@@ -56,4 +56,27 @@ $(document).ready(function(){
         $('.share-bar').fadeIn('slow');
     });
 
+    $('.hc-icon-1').on('click', function(){
+        if($(this).hasClass('current')) {
+            return false;
+        }
+        switchHistorySlides(1);
+    });
+    $('.hc-icon-2').on('click', function(){
+        if($(this).hasClass('current')) {
+            return false;
+        }
+        switchHistorySlides(2);
+    });
+
 });
+function switchHistorySlides(s) {
+
+    $('.history-slides.current').animate({
+        'width': '0'
+    }, function(){
+
+        $(this).removeClass('current');
+    });
+
+}

@@ -4357,8 +4357,6 @@ h2.list-title {
 }
 .fb-6-slider {
     position: relative;
-    background: #fff;
-    background: url('images/fb-6-slider.png') no-repeat 0 30px;
     background-size: 1100px 500px;
     height: 530px;
 }
@@ -4601,4 +4599,92 @@ h2.list-title {
 }
 .share-button:hover {
     text-decoration: underline;
+}
+
+.fb-6-col-1 {
+    width: 344px;
+    height: 390px;
+    padding: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+.history-slides {
+    width: 100%;
+    height: 410px;
+    display: none;
+    overflow: hidden;
+}
+.history-slides.current {
+    display: block;
+    overflow: inherit;
+}
+.history-image {
+    text-align: center;
+    padding-top: 20px;
+}
+.history-image img {
+    width: auto !important;
+    height: 208px !important;
+}
+
+.history-title {
+    text-align: center;
+    padding-top: 8px;
+    color: #FFF;
+    font-size: 50px;
+}
+.history-description {
+    color: #FFF;
+    text-align: center;
+}
+.history-controls {
+    background: url('images/history-controls-bg.png') no-repeat center;
+    height: 100px;
+    margin-top: 40px;
+    padding: 0 252px;
+}
+.hc-icon-1,
+.hc-icon-2,
+.hc-icon-3,
+.hc-icon-4,
+.hc-icon-5,
+.hc-icon-6 {
+    display: inline-block;
+    width: 100px;
+    height: 88px;
+    background-image: url('images/icons_teekanne_history.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.hc-icon-1 {
+    background-position: 0 0;
+}
+.hc-icon-2 {
+    background-position: -100px 0;
+}
+.hc-icon-3 {
+    background-position: -200px 0;
+}
+.hc-icon-4 {
+    background-position: -305px 0;
+}
+.hc-icon-5 {
+    background-position: -408px 0;
+}
+.hc-icon-6 {
+    background-position: -516px 0;
+}
+.hc-icon-1:hover,
+.hc-icon-1.current,
+.hc-icon-2:hover,
+.hc-icon-2.current,
+.hc-icon-3:hover,
+.hc-icon-3.current,
+.hc-icon-4:hover,
+.hc-icon-4.current,
+.hc-icon-5:hover,
+.hc-icon-5.current,
+.hc-icon-6:hover
+.hc-icon-6.current {
+    background-image: url('images/icons_teekanne_history_hover.png');
 }

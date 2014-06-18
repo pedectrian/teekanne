@@ -5,6 +5,7 @@ function onepage_setup() {
     /* Theme Support
       /*----------------------------------------------------------------------------------- */
     add_theme_support('post-thumbnails');
+    add_image_size('history_thumbnail', 364, 208, true);
     add_image_size('post_thumbnail', 600, 250, true);
     add_image_size('post_thumbnail_1', 70, 70, true);
     /* ----------------------------------------------------------------------------------- */
