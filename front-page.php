@@ -74,6 +74,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     <h2 class="list-title">НАШИ ЧАИ:</h2>
                     <ul class="tea-list">
                         <?php
+                        var_dump($pages);die();
                             if($pages) {
                                 $current = 'current';
                                 foreach($pages as $page) {
