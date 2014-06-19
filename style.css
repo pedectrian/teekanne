@@ -4688,3 +4688,58 @@ h2.list-title {
 .hc-icon-6.current {
     background-image: url('images/icons_teekanne_history_hover.png');
 }
+
+.product-sidebar-wrap {
+    margin-top: 57px;
+    background: #f8f3ef;
+    margin-bottom: 30px;
+}
+.product-sidebar {
+    width: 1130px;
+    margin: 0 auto;
+}
+.product-sidebar ul.menu,
+.product-sidebar ul.sub-menu{
+    margin: 0;
+    padding: 0;
+}
+.product-sidebar ul.menu > li {
+    vertical-align: top;
+    margin-right: 30px;
+}
+.product-sidebar ul.menu > li > a {
+    color: #be2c37;
+    margin-bottom: 5px;
+}
+.product-sidebar ul.sub-menu > li > a {
+    color: #817f7d;
+}
+.tea-wooden-bg {
+    background: url('images/wood_pattern.jpg') bottom center repeat-x;
+    height: 526px;
+}
+.tea-wrap {
+    height: 450px;
+    width: 100%;
+}
+.tea-inner {
+    width: 1130px;
+    margin: 0 auto;
+    position: relative;
+    padding: 30px 0;
+}
+.tea-title {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 44px;
+}
+.tea-description p {
+    color: #fff;
+    font-size: 15px;
+    width: 500px;
+}
+.tea-thumbnail {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}

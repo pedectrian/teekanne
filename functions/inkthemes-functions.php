@@ -6,6 +6,7 @@ function onepage_setup() {
       /*----------------------------------------------------------------------------------- */
     add_theme_support('post-thumbnails');
     add_image_size('history_thumbnail', 364, 208, true);
+    add_image_size('tea_page_thumbnail', 408, 523, true);
     add_image_size('post_thumbnail', 600, 250, true);
     add_image_size('post_thumbnail_1', 70, 70, true);
     /* ----------------------------------------------------------------------------------- */
@@ -216,64 +217,13 @@ if (!isset($content_width))
 function onepage_widgets_init() {
 // Area 1, located at the top of the sidebar.
     register_sidebar(array(
-        'name' => PRIMARY_WIDGET,
-        'id' => 'primary-widget-area',
+        'name' => "Меню продуктов",
+        'id' => 'product-page-menu',
         'description' => THE_PRIMARY_WIDGET,
         'before_widget' => '',
         'after_widget' => '',
         'before_title' => '<h3>',
         'after_title' => '</h3>',
-    ));
-// Area 2, located below the Primary Widget Area in the sidebar. Empty by default.
-    register_sidebar(array(
-        'name' => SECONDRY_WIDGET,
-        'id' => 'secondary-widget-area',
-        'description' => THE_SECONDRY_WIDGET,
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>',
-    ));
-
-    // Area 3, located in the footer. Empty by default.
-    register_sidebar(array(
-        'name' => FIRST_FOOTER_WIDGET,
-        'id' => 'first-footer-widget-area',
-        'description' => THE_FIRST_FOOTER_WIDGET,
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h1>',
-        'after_title' => '</h1>',
-    ));
-    // Area 4, located in the footer. Empty by default.
-    register_sidebar(array(
-        'name' => SECONDRY_FOOTER_WIDGET,
-        'id' => 'second-footer-widget-area',
-        'description' => THE_SECONDRY_FOOTER_WIDGET,
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h1>',
-        'after_title' => '</h1>',
-    ));
-    // Area 5, located in the footer. Empty by default.
-    register_sidebar(array(
-        'name' => THIRD_FOOTER_WIDGET,
-        'id' => 'third-footer-widget-area',
-        'description' => THE_THIRD_FOOTER_WIDGET,
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h1>',
-        'after_title' => '</h1>',
-    ));
-    // Area 6, located in the footer. Empty by default.
-    register_sidebar(array(
-        'name' => FOURTH_FOOTER_WIDGET,
-        'id' => 'fourth-footer-widget-area',
-        'description' => THE_FOURTH_FOOTER_WIDGET,
-        'before_widget' => '',
-        'after_widget' => '',
-        'before_title' => '<h1>',
-        'after_title' => '</h1>',
     ));
 }
 
