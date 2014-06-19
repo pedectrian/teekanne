@@ -30,12 +30,10 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 <a class="slide-right"></a>
                 <?php
                 $history = new WP_Query( array ( 'orderby' => 'title', 'order' => 'asc', 'category_name' => 'tea-slide' ) );
-
+                $pages = array();
 
                 if ( $history->have_posts() ) {
                     $current = ' current';
-                    $pages = array();
-
                     while ( $history->have_posts() ) {
                         $history->the_post();
                         if(!is_int(get_the_ID())) {continue;}
@@ -75,9 +73,10 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 <div class="slider-menu">
                     <h2 class="list-title">НАШИ ЧАИ:</h2>
                     <ul class="tea-list">
+                        <div style="display: none">
                         <?php
                             if($pages) {
-//                                unset($pages[0]);
+                                unset($pages[0]);
                                 $current = 'current';
                                 foreach($pages as $page) {
 
