@@ -75,10 +75,9 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     <ul class="tea-list">
                         <?php
                             if($pages) {
-                                unset($pages[0]);
                                 $current = 'current';
                                 foreach($pages as $page) {
-
+                                    if (!isset($page['id']) || $page['id'] < 1) {continue;}
                                     echo '<li><a class="'.$current.'" data-slide-id="'.$page['id'].'">'.$page['title'].'</a></li>';
                                     $current = '';
                                 }
@@ -99,7 +98,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
         if($pages) {
             $current = 'current';
             foreach($pages as $page) {
-                if(!isset($page['id'])) {continue;}
+                if (!isset($page['id']) || $page['id'] < 1) {continue;}
                 echo '<div class="slide-bottom-description '.$current.'" data-slide-id="'.$page['id'].'">';
                     echo '<div class="adonisc uppercase text-center color-white">'.$page['bottom'] . '</div>';
                 echo '</div>';
