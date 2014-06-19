@@ -73,7 +73,6 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 <div class="slider-menu">
                     <h2 class="list-title">НАШИ ЧАИ:</h2>
                     <ul class="tea-list">
-                        <div style="display: none">
                         <?php
                             if($pages) {
                                 unset($pages[0]);
