@@ -39,7 +39,12 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
 
                     while ( $history->have_posts() ) {
                         $history->the_post();
-                        $pages[get_the_ID()] = get_the_title();
+                        $bottomDescr = get_post_meta( get_the_ID(), 'bottom-description' );
+                        $pages[] = [
+                            'id'     => get_the_ID(),
+                            'title'  => get_the_title(),
+                            'bottom' => isset($bottomDescr[0]) ? $bottomDescr[0] : ''
+                        ];
                         $linkToTeaPage = get_post_meta( get_the_ID(), 'link_to_tea_page' );
 
                         echo "<div class='slide". $current . "' data-slide-id='" . get_the_ID() ."'>
@@ -71,36 +76,14 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                         <?php
                             if($pages) {
                                 $current = 'current';
-                                foreach($pages as $pageId => $title) {
-                                    if(!$pageId) {continue;}
-                                    echo '<li><a class="'.$current.'" data-slide-id="'.$pageId.'">'.$title.'</a></li>';
+                                foreach($pages as $page) {
+                                    if(!isset($page['id'])) {continue;}
+                                    echo '<li><a class="'.$current.'" data-slide-id="'.$page['id'].'">'.$page['title'].'</a></li>';
                                     $current = '';
                                 }
                             }
                         ?>
                     </ul>
-                </div>
-
-                <div class="slide" data-slide-id="2">
-                    <div class="slide-text-right">
-                        <div class="adonisc font-25 color-red">Зеленый чай</div>
-                        <p>Коллекция черных чаев TEEKANNE -
-                            содержит самые популярные в мире
-                            чайные вкусы, как чистые, так и с
-                            натуральными ароматическими
-                            добавками, придающими чаю новые
-                            неожиданные оттенки. Всё это делает
-                            чаи TEEKANNE по-настоящему
-                            уникальными.<p>
-                            <a href="#" class="red-button">Узнать больше о продукте</a>
-                    </div>
-                    <img  src="<?php echo get_template_directory_uri(); ?>/images/slide-1.png" alt="slides img1">
-                </div>
-<!--                    --><?php //if (onepage_get_option('onepage_slideimage1') != '') { ?>
-<!--                        <img  src="--><?php //echo onepage_get_option('onepage_slideimage1'); ?><!--" alt="Slide Image 1"/>-->
-<!--                    --><?php //} else { ?>
-<!--                        -->
-<!--                    --><?php //} ?>
                 </div>
             </div>
         </div>
@@ -111,16 +94,18 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     </div>
     <div class="clear"></div>
     <div class="front_block_2">
-        <div class="slide-bottom-description current" data-slide-id="1">
-            <div class="adonisc font-60 text-center color-white">7 МЛРД</div>
-            <div class="adonisc font-20 uppercase text-center color-white">ПАКЕТИКОВ ИДЕАЛЬНОГО ЧАЯ В ГОД.</div>
-            <div class="adonisc font-35 uppercase text-center color-white">ВЫБЕРИ СВОЙ</div>
-        </div>
-        <div class="slide-bottom-description" data-slide-id="2">
-            <div class="adonisc font-60 text-center color-white">107 МЛРД</div>
-            <div class="adonisc font-20 uppercase text-center color-white">ПАКЕТИКОВ ИДЕАЛЬНОГО ЧАЯ В ГОД.</div>
-            <div class="adonisc font-35 uppercase text-center color-white">ВЫБЕРИ СВОЙ</div>
-        </div>
+        <?php
+        if($pages) {
+            $current = 'current';
+            foreach($pages as $page) {
+                if(!isset($page['id'])) {continue;}
+                echo '<div class="slide-bottom-description '.$current.'" data-slide-id="'.$page['id'].'">';
+                    echo '<div class="adonisc font-20 uppercase text-center color-white">'.$page['bottom'] . '</div>';
+                echo '</div>';
+                $current = '';
+            }
+        }
+        ?>
         <div class="fb-2-woman"></div>
     </div>
     <div class="front_block_3">
