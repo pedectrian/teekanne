@@ -36,8 +36,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     $current = ' current';
                     while ( $history->have_posts() ) {
                         $history->the_post();
-                        if(!is_int(get_the_ID())) {continue;}
-                        $bottomDescr = get_post_meta( get_the_ID(), 'bottom-description' );
+
                         $linkToTeaPage = get_post_meta( get_the_ID(), 'link_to_tea_page' );
 
                         echo "<div class='slide". $current . "' data-slide-id='" . get_the_ID() ."'>
@@ -58,13 +57,6 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
 
                         echo '</div>';
 
-
-                        $pages[] = array (
-                            'id'     => get_the_ID(),
-                            'title'  => get_the_title(),
-                            'bottom' => isset($bottomDescr[0]) ? $bottomDescr[0] : ''
-                        );
-
                     }
 
                 }
@@ -74,14 +66,15 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     <h2 class="list-title">НАШИ ЧАИ:</h2>
                     <ul class="tea-list">
                         <?php
-                            if($pages) {
-                                $current = 'current';
-                                foreach($pages as $page) {
-                                    if (!isset($page['id']) || $page['id'] < 1) {continue;}
-                                    echo '<li><a class="'.$current.'" data-slide-id="'.$page['id'].'">'.$page['title'].'</a></li>';
-                                    $current = '';
-                                }
+                        if ( $history->have_posts() ) {
+                            $current = ' current';
+                            while ( $history->have_posts() ) {
+                                $history->the_post();
+
+                                echo '<li><a class="'.$current.'" data-slide-id="'.get_the_ID().'">'.get_the_title().'</a></li>';
+                                $current = '';
                             }
+                        }
                         ?>
                     </ul>
                 </div>
@@ -95,12 +88,13 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     <div class="clear"></div>
     <div class="front_block_2">
         <?php
-        if($pages) {
-            $current = 'current';
-            foreach($pages as $page) {
-                if (!isset($page['id']) || $page['id'] < 1) {continue;}
-                echo '<div class="slide-bottom-description '.$current.'" data-slide-id="'.$page['id'].'">';
-                    echo '<div class="adonisc uppercase text-center color-white">'.$page['bottom'] . '</div>';
+        if ( $history->have_posts() ) {
+            $current = ' current';
+            while ( $history->have_posts() ) {
+                $history->the_post();
+                $bottomDescr = get_post_meta( get_the_ID(), 'bottom-description' );
+                echo '<div class="slide-bottom-description '.$current.'" data-slide-id="'.get_the_ID().'">';
+                    echo '<div class="adonisc uppercase text-center color-white">'.$bottomDescr[0] . '</div>';
                 echo '</div>';
                 $current = '';
             }
