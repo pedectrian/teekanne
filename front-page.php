@@ -72,7 +72,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                                 $history->the_post();
 
                                 echo '<li><a class="'.$current.'" data-slide-id="'.get_the_ID().'">'.get_the_title().'</a></li>';
-                                $current = '';
+                                $current = ' ';
                             }
                         }
                         ?>
