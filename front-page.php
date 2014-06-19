@@ -34,8 +34,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
 
                 if ( $history->have_posts() ) {
                     $current = ' current';
-                    $pages = [];
-
+                    $pages = array();
 
                     while ( $history->have_posts() ) {
                         $history->the_post();
