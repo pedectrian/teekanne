@@ -38,6 +38,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
 
                     while ( $history->have_posts() ) {
                         $history->the_post();
+                        if(!(int)get_the_ID()) {continue;}
                         $bottomDescr = get_post_meta( get_the_ID(), 'bottom-description' );
                         $pages[] = array (
                             'id'     => get_the_ID(),
