@@ -1,53 +1,38 @@
-<!-- ***********************Footer Page Starts************************* -->
-<div class="footer">
-    <div class="container_24">
-        <div class="grid_24">
-<!--            --><?php
-//            /* A sidebar in the footer? Yep. You can can customize
-//             * your footer with four columns of widgets.
-//             */
-//            get_sidebar('footer');
-//            ?>
+
+    <div class="footer-wrap">
+        <div class="footer-left-text">
+            <h1 class="adonisc font-65 color-red" style="margin-bottom: 50px;">РАССЫЛКА:</h1>
+
+            <input type="text" placeholder="Имя">
+            <input type="text" placeholder="E-mail">
+            <input type="submit" class="myriad" value="Подписаться">
+            <div class="always-on-touch">
+                <div class="color-red font-25">Мы всегда на связи!</div>
+                <p>Мы стараемся работать так, чтобы Вы были довольны.
+                    Если Вы хотите задать вопрос или написать нам, просто
+                    заполните следующую форму и мы свяжемся с Вами в ближайшее
+                    время.</p>
+                <p>
+                    Благодарим Вас за интерес к нашей компании!</p>
+            </div>
+        </div>
+        <div class="fb-9-fullwidth">
+            <p>TEEKANNE Group – это группа компаний, в состав которой входят: Teekanne GmbH & Co. KG, Дюссельдорф, Германия; Teehaus GmbH, Радебойль, Германия; Teekanne Ges. mbH, Зальцбург,
+                Австрия; Teekanne Polska sp.z.o.o., Краков, Польша; Teekanne s.r.o., Братислава, Словакия; Teekanne Ceska spol.s.r.o., Прага, Чехия, Pompadour Té S.r.l./GmbH, Больцано, Италия; Pompadour Ibérica
+                S.A., Аликанте, Испания и Redco Foods Inc., Виндзор, Коннектикут, США. В дальнейшем для обозначения этих компаний будет использоваться «TEEKANNE» или «TEEKANNE Group».
+            </p>
+            <p>Все материалы на сайте TEEKANNE защищены авторским правом и предназначены исключительно для частного просмотра и некоммерческого использования. Воспроизведение содержимого
+                сайта возможно только при условии сохранения информации об авторском праве и других сведений о праве собственности TEEKANNE. Не разрешается изменять материалы этого сайта, а также
+                воспроизводить, выставлять на всеобщее обозрение, демонстрировать, распространять или использовать любым другим образом для общественных или коммерческих целей без
+                предварительного письменного разрешения TEEKANNE. При нарушении этих правил Вы должны немедленно уничтожить распечатанные или загруженные материалы. Мы оставляем за собой
+                право требовать возмещения убытков.</p>
         </div>
     </div>
-</div>
-<!-- ***********************Footer Page Ends************************* -->
-<!-- ***********************Copyright starts************************* -->
-<div class="copyright_wrapper">
-<!--    <div class="container_24">-->
-<!--        <div class="grid_24">-->
-<!--            <div class="grid_12 alpha">-->
-<!--                <div class="copyright_text">-->
-<!--                    <p><a href="http://www.inkthemes.com/" alt="OnePage">One page</a> Theme Powered By <a href="http://www.wordpress.org" alt="WordPress">WordPress</a></p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="grid_12 omega">-->
-<!--                <div class="footer_social_icons">-->
-<!--                    <ul class="social_logos">			-->
-<!--                        --><?php //if (onepage_get_option('onepage_facebook') != '') { ?>
-<!--                            <li class="fb"><a href="--><?php //echo onepage_get_option('onepage_facebook'); ?><!--" alt="Facebook icon" target="_blank"></a></li>   -->
-<!--                        --><?php //} ?><!--  -->
-<!--                        --><?php //if (onepage_get_option('onepage_twitter') != '') { ?>
-<!--                            <li class="tw"><a href="--><?php //echo onepage_get_option('onepage_twitter'); ?><!--" alt="Twitter icon" target="_blank"></a></li>-->
-<!--                        --><?php //} ?><!--  -->
-<!--                        --><?php //if (onepage_get_option('onepage_google') != '') { ?>
-<!--                            <li class="gp"><a href="--><?php //echo onepage_get_option('onepage_google'); ?><!--" alt="Google Plus icon" target="_blank"></a></li>-->
-<!--                        --><?php //} ?><!--  -->
-<!--                        --><?php //if (onepage_get_option('onepage_rss') != '') { ?>
-<!--                            <li class="ln"><a href="--><?php //echo onepage_get_option('onepage_rss'); ?><!--" alt="RSS" target="_blank"></a></li>-->
-<!--                        --><?php //} ?><!--  -->
-<!--                        --><?php //if (onepage_get_option('onepage_pinterest') != '') { ?>
-<!--                            <li class="pn"><a href="--><?php //echo onepage_get_option('onepage_pinterest'); ?><!--" alt="Pinterest" target="_blank"></a></li>-->
-<!--                        --><?php //} ?><!-- -->
-<!--                        --><?php //if (onepage_get_option('onepage_youtube') != '') { ?>
-<!--                            <li class="yt"><a href="--><?php //echo onepage_get_option('onepage_youtube'); ?><!--" alt="YouTube icon" target="_blank"></a></li> -->
-<!--                            --><?php //} ?><!--  -->
-<!---->
-<!--                    </ul> -->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div class="footer">
+        <div class="container_24">
+            <div class="grid_24"></div>
+        </div>
+    </div>
 </div>
 
 <!-- ***********************Copyright Ends************************* -->

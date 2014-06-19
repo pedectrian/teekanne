@@ -40,39 +40,7 @@
         <div class="adonisc font-35 uppercase text-center color-white">ВЫБЕРИ СВОЙ</div>
     </div>
 </div>
-    <div class="front_block_9" style="height: 650px;background-image: none;">
-        <div class="fb-9-wrap" style="height: 650px;background-image: none;">
-            <div class="fb-9-left-2">
-                <h1 class="adonisc font-65 color-red" style="margin-bottom: 50px;">РАССЫЛКА:</h1>
 
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="E-mail">
-                <input type="submit" class="myriad" value="Подписаться">
-                <div class="always-on-touch">
-                    <div class="color-red font-25">Мы всегда на связи!</div>
-                    <p>Мы стараемся работать так, чтобы Вы были довольны.
-                        Если Вы хотите задать вопрос или написать нам, просто
-                        заполните следующую форму и мы свяжемся с Вами в ближайшее
-                        время.</p>
-                    <p>
-                        Благодарим Вас за интерес к нашей компании!</p>
-                </div>
-            </div>
-            <div class="fb-9-fullwidth">
-                <p>TEEKANNE Group – это группа компаний, в состав которой входят: Teekanne GmbH & Co. KG, Дюссельдорф, Германия; Teehaus GmbH, Радебойль, Германия; Teekanne Ges. mbH, Зальцбург,
-                Австрия; Teekanne Polska sp.z.o.o., Краков, Польша; Teekanne s.r.o., Братислава, Словакия; Teekanne Ceska spol.s.r.o., Прага, Чехия, Pompadour Té S.r.l./GmbH, Больцано, Италия; Pompadour Ibérica
-                S.A., Аликанте, Испания и Redco Foods Inc., Виндзор, Коннектикут, США. В дальнейшем для обозначения этих компаний будет использоваться «TEEKANNE» или «TEEKANNE Group».
-                </p>
-                <p>Все материалы на сайте TEEKANNE защищены авторским правом и предназначены исключительно для частного просмотра и некоммерческого использования. Воспроизведение содержимого
-                сайта возможно только при условии сохранения информации об авторском праве и других сведений о праве собственности TEEKANNE. Не разрешается изменять материалы этого сайта, а также
-                воспроизводить, выставлять на всеобщее обозрение, демонстрировать, распространять или использовать любым другим образом для общественных или коммерческих целей без
-                предварительного письменного разрешения TEEKANNE. При нарушении этих правил Вы должны немедленно уничтожить распечатанные или загруженные материалы. Мы оставляем за собой
-                право требовать возмещения убытков.</p>
-            </div>
-        </div>
-    </div>
-    <div class="front_block_10">
-    </div>
     <!-- ***********************Featured Text Area Block************************* -->
 
             <div class="clear"></div>

@@ -28,31 +28,59 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
             <div class="slides-wrapper">
                 <a class="slide-left"></a>
                 <a class="slide-right"></a>
+                <?php
+                $history = new WP_Query( array ( 'orderby' => 'title', 'order' => 'asc', 'category_name' => 'tea-slide' ) );
+
+
+                if ( $history->have_posts() ) {
+                    $current = ' current';
+                    $pages = [];
+
+
+                    while ( $history->have_posts() ) {
+                        $history->the_post();
+                        $pages[get_the_ID()] = get_the_title();
+                        $linkToTeaPage = get_post_meta( get_the_ID(), 'link_to_tea_page' );
+
+                        echo "<div class='slide". $current . "' data-slide-id='" . get_the_ID() ."'>
+                                <div class='slide-text-right'>
+                                <div class='adonisc font-25 color-red'>" . get_the_title() . "</div>
+                                <p>" . get_the_content() . "</p>";
+                        if (isset($linkToTeaPage[0])){
+                            echo "<a href='" . $linkToTeaPage[0] ."' class='red-button'>Узнать больше о продукте</a>";
+                        }
+
+                        echo "</div>";
+
+                                if ( has_post_thumbnail() ) {
+                                    the_post_thumbnail('tea_page_thumbnail');
+                                }
+
+                        $current = '';
+
+                        echo '</div>';
+
+                    }
+
+                }
+
+                ?>
                 <div class="slider-menu">
                     <h2 class="list-title">НАШИ ЧАИ:</h2>
                     <ul class="tea-list">
-                        <li><a class="current" data-slide-id="1">Черный</a></li>
-                        <li><a data-slide-id="2">Зеленый</a></li>
-                        <li><a data-slide-id="3">Фруктовый и травяной</a></li>
-                        <li><a data-slide-id="4">Десертный</a></li>
-                        <li><a data-slide-id="5">Сезонный</a></li>
+                        <?php
+                            if($pages) {
+                                $current = 'current';
+                                foreach($pages as $pageId => $title) {
+                                    if(!$pageId) {continue;}
+                                    echo '<li><a class="'.$current.'" data-slide-id="'.$pageId.'">'.$title.'</a></li>';
+                                    $current = '';
+                                }
+                            }
+                        ?>
                     </ul>
                 </div>
-                <div class="slide current" data-slide-id="1">
-                    <div class="slide-text-right">
-                        <div class="adonisc font-25 color-red">Черный чай</div>
-                        <p>Коллекция черных чаев TEEKANNE -
-                            содержит самые популярные в мире
-                            чайные вкусы, как чистые, так и с
-                            натуральными ароматическими
-                            добавками, придающими чаю новые
-                            неожиданные оттенки. Всё это делает
-                            чаи TEEKANNE по-настоящему
-                            уникальными.<p>
-                        <a href="#" class="red-button">Узнать больше о продукте</a>
-                    </div>
-                    <img  src="<?php echo get_template_directory_uri(); ?>/images/slide-1.png" alt="slides img1">
-                </div>
+
                 <div class="slide" data-slide-id="2">
                     <div class="slide-text-right">
                         <div class="adonisc font-25 color-red">Зеленый чай</div>
@@ -306,36 +334,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
 
                 <a href="#" class="red-button">Читать полностью</a>
             </div>
-            <div class="fb-9-left-2">
-                <h1 class="adonisc font-65 color-red" style="margin-bottom: 50px;">РАССЫЛКА:</h1>
-
-                <input type="text" placeholder="Имя">
-                <input type="text" placeholder="E-mail">
-                <input type="submit" class="myriad" value="Подписаться">
-                <div class="always-on-touch">
-                    <div class="color-red font-25">Мы всегда на связи!</div>
-                    <p>Мы стараемся работать так, чтобы Вы были довольны.
-                        Если Вы хотите задать вопрос или написать нам, просто
-                        заполните следующую форму и мы свяжемся с Вами в ближайшее
-                        время.</p>
-                    <p>
-                        Благодарим Вас за интерес к нашей компании!</p>
-                </div>
-            </div>
-            <div class="fb-9-fullwidth">
-                <p>TEEKANNE Group – это группа компаний, в состав которой входят: Teekanne GmbH & Co. KG, Дюссельдорф, Германия; Teehaus GmbH, Радебойль, Германия; Teekanne Ges. mbH, Зальцбург,
-                Австрия; Teekanne Polska sp.z.o.o., Краков, Польша; Teekanne s.r.o., Братислава, Словакия; Teekanne Ceska spol.s.r.o., Прага, Чехия, Pompadour Té S.r.l./GmbH, Больцано, Италия; Pompadour Ibérica
-                S.A., Аликанте, Испания и Redco Foods Inc., Виндзор, Коннектикут, США. В дальнейшем для обозначения этих компаний будет использоваться «TEEKANNE» или «TEEKANNE Group».
-                </p>
-                <p>Все материалы на сайте TEEKANNE защищены авторским правом и предназначены исключительно для частного просмотра и некоммерческого использования. Воспроизведение содержимого
-                сайта возможно только при условии сохранения информации об авторском праве и других сведений о праве собственности TEEKANNE. Не разрешается изменять материалы этого сайта, а также
-                воспроизводить, выставлять на всеобщее обозрение, демонстрировать, распространять или использовать любым другим образом для общественных или коммерческих целей без
-                предварительного письменного разрешения TEEKANNE. При нарушении этих правил Вы должны немедленно уничтожить распечатанные или загруженные материалы. Мы оставляем за собой
-                право требовать возмещения убытков.</p>
-            </div>
         </div>
-    </div>
-    <div class="front_block_10">
     </div>
     <!-- ***********************Featured Text Area Block************************* -->
 

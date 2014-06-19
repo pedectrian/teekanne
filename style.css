@@ -922,11 +922,10 @@ input[type="submit"].search-button:hover {
     margin: 0 auto;
     width: auto;
     margin-top: 20px;
-    margin-left: -65px;
-
     position: absolute;
-    top: 10px;
-    left: 0;
+    top: 44px;
+    left: 50%;
+    margin-left: -237px;
 }
 .slider_img_container {
     position: relative;
@@ -1198,71 +1197,6 @@ p.services_box_rect_para{
 }
 .anchor_bordera h1 {
 	margin-top: 0px;
-}
-
-
-
-/*-----------------------------------------------------------------------------------*/
-/*	10. #Footer  Styles
-/*-----------------------------------------------------------------------------------*/
-.footer {
-    padding-top:52px;
-    background:#111;
-    overflow:hidden;
-    color: #d8d4d4;
-    padding-bottom:50px;
-    height: 60px;
-
-    background: #be2c37 url('images/footer.png') center center no-repeat;
-}
-.footer ul {
-    padding: 0 0 0 0;
-}
-.footer ul li {
-    background: url(images/footer-li-col.png) no-repeat 0 6px;
-    padding-left:28px;
-}
-.footer ul li a{
-    border-bottom:1px dotted #4b4a4a;
-    padding-bottom:6px;
-    display:block;
-}
-.footer ol li{
-    display: list-item;
-    padding-left: 3px;
-    margin-left: 5px;
-    list-style-type: decimal;
-}
-.footer h1 {
-    font-family: 'adonisc', serif;
-}
-.footer p{
-    line-height: 25px;
-    color: #fff;
-}
-.footer li{
-    display:block;
-    padding-bottom: 13px;
-}
-.footer_columns.second {
-    margin-right:16px;
-    margin-left:5px;
-}
-.footer_columns.third {
-    margin-right:11px;
-    margin-left:10px;	
-}
-.footer_columns a{
-    color: #fff;
-}
-
-.footer_columns.last{
-    margin-right:0px;
-    margin-left:21px;
-}
-.footer_columns.first {
-    margin-right:21px;
-    margin-left:0px;
 }
 
 .gallery_widgets{
@@ -4373,7 +4307,6 @@ h2.list-title {
     width: 1130px;
     margin: 0 auto;
     background: url('images/world-wide-bg.png') -35px -2px repeat-x;
-    height: 1400px;
     background-size: 1130px;
 }
 .fb-9-left {
@@ -4742,4 +4675,57 @@ h2.list-title {
     position: absolute;
     top: 50px;
     right: 0;
+}
+
+
+/*-----------------------------------------------------------------------------------*/
+/*	10. #Footer  Styles
+/*-----------------------------------------------------------------------------------*/
+.footer-wrap {
+    width: 1130px;
+    margin: 0 auto;
+    height: 650px;
+}
+.footer-left-text {
+    width: 750px;
+    padding-top: 45px;
+    position: relative;
+}
+
+.footer-wrap input[type='text'] {
+    background: #E2DFDD;
+    border-radius: 0;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 15px;
+    color: #666;
+    font-size: 20px;
+    line-height: 20px;
+    width: 500px;
+    margin-top: 20px;
+    display: block;
+}
+.footer-wrap input[type='submit'] {
+    background: #be2c37;
+    border-radius: 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    width: 530px;
+    margin-top: 20px;
+    display: block;
+}
+.footer {
+    padding-top: 52px;
+    background: #111;
+    overflow: hidden;
+    color: #D8D4D4;
+    padding-bottom: 50px;
+    height: 60px;
+    background: #BE2C37 url('images/footer.png') center center no-repeat;
 }
