@@ -39,11 +39,11 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     while ( $history->have_posts() ) {
                         $history->the_post();
                         $bottomDescr = get_post_meta( get_the_ID(), 'bottom-description' );
-                        $pages[] = [
+                        $pages[] = array (
                             'id'     => get_the_ID(),
                             'title'  => get_the_title(),
                             'bottom' => isset($bottomDescr[0]) ? $bottomDescr[0] : ''
-                        ];
+                        );
                         $linkToTeaPage = get_post_meta( get_the_ID(), 'link_to_tea_page' );
 
                         echo "<div class='slide". $current . "' data-slide-id='" . get_the_ID() ."'>
