@@ -77,9 +77,10 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     <ul class="tea-list">
                         <?php
                             if($pages) {
+                                unset($pages[0]);
                                 $current = 'current';
                                 foreach($pages as $page) {
-                                    if(!isset($page['id'])) {continue;}
+
                                     echo '<li><a class="'.$current.'" data-slide-id="'.$page['id'].'">'.$page['title'].'</a></li>';
                                     $current = '';
                                 }
