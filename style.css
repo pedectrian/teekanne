@@ -4067,10 +4067,17 @@ body {
     height: 550px;
     background-size: 100% 250px;
 }
+.front_block_3_right {
+    background: url('images/front_block_3_right.png') top right no-repeat;
+}
 .front_block_3 {
-    background: url('images/front_block_3.png') top center no-repeat;
+    background: url('images/front_block_3_left.png') top left no-repeat;
     height: 950px;
-    background-size: 1440px 850px;
+}
+.front_block_3 .history-block {
+    background: url('images/front_block_3.png') -127px 0 no-repeat;
+    background-size: 1400px 850px;
+    height: 850px;
 }
 .front_block_4 {
     padding-top: 5px;
@@ -4639,6 +4646,9 @@ h2.list-title {
 .product-sidebar ul.menu > li {
     vertical-align: top;
     margin-right: 30px;
+}
+.product-sidebar ul.sub-menu > li {
+    display: block;
 }
 .product-sidebar ul.menu > li > a {
     color: #be2c37;

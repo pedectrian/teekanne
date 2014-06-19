@@ -19,6 +19,8 @@
 
     <?php $bgColor = get_post_meta( get_the_ID(), 'bg_color' ); ?>
     <?php $bgImage = get_post_meta( get_the_ID(), 'bg_image' ); ?>
+    <?php $bottomDescr = get_post_meta( get_the_ID(), 'bottom-description' ); ?>
+
     <div class="tea-wooden-bg">
         <div class="tea-wrap" style="background: <?php echo $bgColor[0].' url(\''.$bgImage[0].'\') no-repeat top right'; ?>">
             <div class="tea-inner">
@@ -35,9 +37,7 @@
 <!--End Loop-->
 <div class="front_block_2" style="height: 250px;">
     <div class="slide-bottom-description current" data-slide-id="1">
-        <div class="adonisc font-60 text-center color-white">7 МЛРД</div>
-        <div class="adonisc font-20 uppercase text-center color-white">ПАКЕТИКОВ ИДЕАЛЬНОГО ЧАЯ В ГОД.</div>
-        <div class="adonisc font-35 uppercase text-center color-white">ВЫБЕРИ СВОЙ</div>
+        <div class="adonisc font-20 uppercase text-center color-white"><?php echo $bottomDescr; ?></div>
     </div>
 </div>
 
