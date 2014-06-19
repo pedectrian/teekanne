@@ -40,11 +40,6 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                         $history->the_post();
                         if(!is_int(get_the_ID())) {continue;}
                         $bottomDescr = get_post_meta( get_the_ID(), 'bottom-description' );
-                        $pages[] = array (
-                            'id'     => get_the_ID(),
-                            'title'  => get_the_title(),
-                            'bottom' => isset($bottomDescr[0]) ? $bottomDescr[0] : ''
-                        );
                         $linkToTeaPage = get_post_meta( get_the_ID(), 'link_to_tea_page' );
 
                         echo "<div class='slide". $current . "' data-slide-id='" . get_the_ID() ."'>
@@ -64,6 +59,13 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                         $current = '';
 
                         echo '</div>';
+
+
+                        $pages[] = array (
+                            'id'     => get_the_ID(),
+                            'title'  => get_the_title(),
+                            'bottom' => isset($bottomDescr[0]) ? $bottomDescr[0] : ''
+                        );
 
                     }
 
