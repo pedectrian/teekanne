@@ -127,6 +127,50 @@ var historySlider = {
     }
 };
 
+
+var qualitySlider = {
+    init: function() {
+        qualitySlider.slideWidth = 1130;
+        qualitySlider.currentPosition = 0;
+        qualitySlider.slides = $('.quality-col-1');
+        qualitySlider.numberOfSlides = qualitySlider.slides.length;
+
+        qualitySlider.slides
+            .wrapAll('<div id="qualitySlidesHolder"></div>')
+            .css({ 'float' : 'left' });
+
+        $('#qualitySlidesHolder').css('width', qualitySlider.slideWidth * qualitySlider.numberOfSlides);
+
+        qualitySlider.manageNav(qualitySlider.currentPosition);
+
+        //tell the buttons what to do when clicked
+        $('.quality-slider-nav').on('click', function(){
+            if ($(this).hasClass('quality-slide-left')) {
+                mainSlider.currentPosition = mainSlider.currentPosition-1;
+            } else {
+                mainSlider.currentPosition = mainSlider.currentPosition+1;
+            }
+
+            //hide/show controls
+            qualitySlider.manageNav(qualitySlider.currentPosition);
+            qualitySlider.moveSlide();
+        });
+
+    },
+    manageNav: function (position) {
+        //hide left arrow if position is first slide
+        if(position==0){ $('.quality-slide-left').hide() }
+        else { $('.quality-slide-left').show() }
+        //hide right arrow is slide position is last slide
+        if(position==qualitySlider.numberOfSlides-1 || qualitySlider.numberOfSlides == 2 ){ $('.quality-slide-right').hide() }
+        else { $('.quality-slide-right').show() }
+    },
+    moveSlide: function () {
+        $('#qualitySlidesHolder')
+            .animate({'marginLeft' : qualitySlider.slideWidth*(-qualitySlider.currentPosition)});
+    }
+};
+
 /**
  * Created by pedectrian on 09.06.14.
  */
@@ -137,6 +181,7 @@ $(document).ready(function(){
 
     mainSlider.init();
     historySlider.init();
+    qualitySlider.init();
 
     $('.search-icon').on('click', function(){
         $('.search-bar').fadeIn('slow');

@@ -222,10 +222,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     $history = new WP_Query( array ( 'orderby' => 'title', 'order' => 'asc', 'category_name' => 'history' ) );
 
                     if ( $history->have_posts() ) {
-                        $num = 0;
-                        $current = ' current';
-
-                        echo '<div class="history-slides' . $current . '">';
+                        echo '<div class="history-slides">';
                         while ( $history->have_posts() ) {
                             $history->the_post();
 
@@ -260,7 +257,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     <div class="front_block_7">
         <div class="fb-7-wrap">
             <div class="fb-7-left">
-                <h1 class="adonisc font-50 color-red" style="line-height: 50px;">Гарантия качества от производителя</h1>
+                <h1 class="adonisc font-50 color-red" style="line-height: 50px;margin-top: 40px;">Гарантия качества от производителя</h1>
             </div>
             <div class="fb-7-right adonisc">
                 <p class="color-grey adonisc" style="margin-top: 50px">В TEEKANNE главное – насладиться ароматной чашкой чая. Для этого
@@ -269,47 +266,36 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     лабораториях, чтобы бережно упакованный в пакетики чай TEEKANNE
                     радовал Вас своим великолепным вкусом.</p>
             </div>
+            <div class="fb-7-slider">
+                <a class="quality-slider-nav quality-slide-left"></a>
+                <a class="quality-slider-nav quality-slide-right"></a>
+                <?php
+                $quality = new WP_Query( array ( 'orderby' => 'date', 'order' => 'desc', 'category_name' => 'quality' ) );
 
-            <?php
-            $history = new WP_Query( array ( 'orderby' => 'title', 'order' => 'asc', 'category_name' => 'quality' ) );
+                if ( $quality->have_posts() ) {
+                    echo '<div class="quality-slides">';
 
-            if ( $history->have_posts() ) {
-                $num = 0;
-                $current = ' current';
+                    while ( $quality->have_posts() ) {
+                        $quality->the_post();
 
+                        echo '<div class="quality-col-1">';
+                        if ( has_post_thumbnail() ) {
+                            echo "<div class='quality-image'>";
+                            the_post_thumbnail('history_thumbnail');
+                            echo "</div>";
+                        }
+                        echo "<div class='quality-title'>" . get_the_title() . "</div>";
+                        echo "<div class='quality-description'>" . get_the_excerpt() . "</div>";
 
-                while ( $history->have_posts() ) {
-                    $history->the_post();
-
-                    if ($num%3 == 0) {
-                        echo '<div class="history-slides' . $current . '">';
-                        $current = '';
-                    }
-
-                    echo '<div class="fb-6-col-1">';
-                    if ( has_post_thumbnail() ) {
-                        echo "<div class='history-image'>";
-                        the_post_thumbnail('history_thumbnail');
-                        echo "</div>";
-                    }
-                    echo "<div class='history-title'>" . get_the_title() . "</div>";
-                    echo "<div class='history-description'>" . get_the_content() . "</div>";
-
-                    echo '</div>';
-                    $num++;
-                    if ($num == 3 || $num > 3) {
+                        echo "<a class='quality-permalink' href='" . get_the_permalink() . "'>Читать полностью</a>";
                         echo '</div>';
-                        $num = 0;
                     }
 
-                }
-
-                if ($num < 3) {
                     echo '</div>';
                 }
-            }
 
             ?>
+            </div>
         </div>
     </div>
 

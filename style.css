@@ -518,6 +518,10 @@ input[type="submit"].search-button:hover {
     left: 0;
 }
 
+.admin-bar .header_wrapper {
+    top: 32px;
+}
+
 #logo {
     padding: 10px 0 7px 0;
     height: 40px;
@@ -4323,9 +4327,13 @@ h2.list-title {
     width: 1130px;
     margin: 0 auto;
 
-    background: url('images/fb-7-bg.png') top center repeat-x;
     height: 700px;
 }
+.fb-7-slider {
+    position: relative;
+    height: 530px;
+}
+
 
 
 .fb-9-wrap {
@@ -4390,12 +4398,13 @@ h2.list-title {
     font-size: 13px;
     color: #666666;
 }
-.fb-7-left,
-.fb-7-right {
+.fb-7-left, .fb-7-right {
     width: 450px;
-    margin-right: 125px;
+    margin-right: 60px;
     font-size: 14px;
     display: inline-block;
+    vertical-align: top;
+    margin-left: 62px;
 }
 
 .fb-6-right,
@@ -4538,10 +4547,6 @@ h2.list-title {
     width: 1140px;
     position: relative;
 }
-.slide.current {
-    display: block;
-}
-
 .searchform {
     padding: 0 !important;
     border: none !important;
@@ -4569,6 +4574,43 @@ h2.list-title {
     vertical-align: top;
     display: inline-block;
 }
+.quality-slides {
+    margin-top: 40px;
+    padding-left: 50px;
+}
+.quality-col-1 {
+    width: 314px;
+    height: 355px;
+    vertical-align: top;
+    display: inline-block;
+    background: url('images/quality-slider-bg.png') top center no-repeat;
+    margin: 0 95px 0 0;
+    padding: 50px 75px 40px 80px;
+    background-size: 100%;
+}
+.quality-image {
+    text-align: center;
+}
+.quality-title {
+    color: #c12236;
+    font-size: 25px;
+    margin: 5px 0;
+}
+.quality-description {
+    color: #666666;
+    font-size: 13px;
+    font-family: "Myriad Pro Regular",serif;
+}
+a.quality-permalink {
+    color: #FFF;
+    background: #B42A3A;
+    font-family: "Myriad Pro Regular",serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
 .history-slides {
     width: 1100px;
     height: 410px;
@@ -4592,6 +4634,7 @@ h2.list-title {
 .history-description {
     color: #FFF;
     text-align: center;
+    font-size: 15px;
 }
 .history-controls {
     background: url('images/history-controls-bg.png') no-repeat center;
@@ -4753,4 +4796,24 @@ h2.list-title {
     padding-bottom: 50px;
     height: 60px;
     background: #BE2C37 url('images/footer.png') center center no-repeat;
+}
+
+.quality-slide-left,
+.quality-slide-right {
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    top: 200px;
+    cursor: pointer;
+    z-index: 99999;
+}
+.quality-slide-left {
+    left: -50px;
+    background: url('images/quality-slide-left.png') no-repeat;
+}
+
+.quality-slide-right {
+    right: 35px;
+    background: url('images/quality-slide-right.png') no-repeat;
 }
