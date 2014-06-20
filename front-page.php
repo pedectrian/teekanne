@@ -67,7 +67,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     <ul class="tea-list">
                         <?php
                         if ( $history->have_posts() ) {
-                            $current = ' current';
+                            $current = 'current';
                             while ( $history->have_posts() ) {
                                 $history->the_post();
 
@@ -87,6 +87,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     </div>
     <div class="clear"></div>
     <div class="front_block_2">
+        <div class="captions-wrap">
         <?php
         if ( $history->have_posts() ) {
             $current = ' current';
@@ -100,6 +101,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
             }
         }
         ?>
+        </div>
         <div class="fb-2-woman"></div>
     </div>
     <div class="front_block_3_right">
@@ -278,6 +280,47 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     лабораториях, чтобы бережно упакованный в пакетики чай TEEKANNE
                     радовал Вас своим великолепным вкусом.</p>
             </div>
+
+            <?php
+            $history = new WP_Query( array ( 'orderby' => 'title', 'order' => 'asc', 'category_name' => 'quality' ) );
+
+            if ( $history->have_posts() ) {
+                $num = 0;
+                $current = ' current';
+
+
+                while ( $history->have_posts() ) {
+                    $history->the_post();
+
+                    if ($num%3 == 0) {
+                        echo '<div class="history-slides' . $current . '">';
+                        $current = '';
+                    }
+
+                    echo '<div class="fb-6-col-1">';
+                    if ( has_post_thumbnail() ) {
+                        echo "<div class='history-image'>";
+                        the_post_thumbnail('history_thumbnail');
+                        echo "</div>";
+                    }
+                    echo "<div class='history-title'>" . get_the_title() . "</div>";
+                    echo "<div class='history-description'>" . get_the_content() . "</div>";
+
+                    echo '</div>';
+                    $num++;
+                    if ($num == 3 || $num > 3) {
+                        echo '</div>';
+                        $num = 0;
+                    }
+
+                }
+
+                if ($num < 3) {
+                    echo '</div>';
+                }
+            }
+
+            ?>
         </div>
     </div>
 

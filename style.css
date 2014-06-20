@@ -4127,6 +4127,8 @@ body {
     width: 1140px;
     margin: 0 auto;
     position: relative;
+
+    overflow: hidden;
 }
 
 .slide-left,
@@ -4158,7 +4160,7 @@ body {
 }
 .slide-text-right {
     position: absolute;
-    right: 65px;
+    right: 0;
     top: 100px;
     width: 253px;
     font-family: Adonisc, serif;
@@ -4186,6 +4188,7 @@ h2.list-title {
     font-family: Adonisc, serif;
     display: block;
     padding: 5px 10px;
+    cursor: pointer;
 }
 .tea-list li a:hover,
 .tea-list li a.current {
@@ -4204,11 +4207,16 @@ h2.list-title {
 .red-button:hover {
     background: #be2c37 url('images/red-bg.png');
 }
+.captions-wrap {
+    width: 1140px;
+    overflow: hidden;
+    height: 150px;
+    margin: 0 auto;
+}
 .slide-bottom-description {
     width: 1140px;
     margin: 0 auto;
     padding: 30px 0;
-    display: none;
 }
 .slide-bottom-description.current {
     display: block;
@@ -4515,7 +4523,10 @@ h2.list-title {
     margin: -1px 0 0 10px !important;
 }
 .slide {
-    display: none;
+    float: left;
+    height: 500px;
+    width: 1140px;
+    position: relative;
 }
 .slide.current {
     display: block;
