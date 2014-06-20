@@ -162,7 +162,7 @@ var qualitySlider = {
         if(position==0){ $('.quality-slide-left').hide() }
         else { $('.quality-slide-left').show() }
         //hide right arrow is slide position is last slide
-        if(position==qualitySlider.numberOfSlides-1 || qualitySlider.numberOfSlides == 2 ){ $('.quality-slide-right').hide() }
+        if(position==qualitySlider.numberOfSlides-1 || qualitySlider.numberOfSlides < 2 ){ $('.quality-slide-right').hide() }
         else { $('.quality-slide-right').show() }
     },
     moveSlide: function () {
