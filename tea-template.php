@@ -28,7 +28,11 @@
                 <div class="tea-description"><?php echo the_content(); ?></div>
                 <div class="tea-thumbnail">
                     <?php the_post_thumbnail('tea_page_thumbnail'); ?>
+
+                    <a class="tea-nav tea-left"></a>
+                    <a class="tea-nav tea-right"></a>
                 </div>
+
             </div>
         </div>
     </div>
