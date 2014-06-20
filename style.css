@@ -920,12 +920,12 @@ input[type="submit"].search-button:hover {
 .homepage_top_feature img{
     height: 400px;
     margin: 0 auto;
-    width: auto;
+    width: 400px;
     margin-top: 20px;
     position: absolute;
     top: 44px;
     left: 50%;
-    margin-left: -237px;
+    margin-left: -280px;
 }
 .slider_img_container {
     position: relative;
@@ -4210,7 +4210,7 @@ h2.list-title {
 .captions-wrap {
     width: 1140px;
     overflow: hidden;
-    height: 150px;
+    height: 250px;
     margin: 0 auto;
 }
 .slide-bottom-description {
