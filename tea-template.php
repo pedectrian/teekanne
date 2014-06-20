@@ -35,10 +35,8 @@
     <?php endwhile; ?>
 <?php endif; ?>
 <!--End Loop-->
-<div class="front_block_2" style="height: 250px;">
-    <div class="slide-bottom-description current" data-slide-id="1">
-        <div class="adonisc font-20 uppercase text-center color-white"><?php echo $bottomDescr[0]; ?></div>
-    </div>
+<div class="front_block_2" style="height: 250px;padding: 30px 0;">
+    <div class="adonisc font-20 uppercase text-center color-white"><?php echo $bottomDescr[0]; ?></div>
 </div>
 
     <!-- ***********************Featured Text Area Block************************* -->

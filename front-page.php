@@ -26,10 +26,10 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     <div class="homepage_top_feature">
         <div class="slider_img_container">
             <div class="slides-wrapper">
-                <a class="slide-left"></a>
-                <a class="slide-right"></a>
+                <a class="slider-nav slide-left"></a>
+                <a class="slider-nav slide-right"></a>
                 <?php
-                $history = new WP_Query( array ( 'orderby' => 'title', 'order' => 'asc', 'category_name' => 'tea-slide' ) );
+                $history = new WP_Query( array ( 'orderby' => 'date', 'order' => 'desc', 'category_name' => 'tea-slide' ) );
                 $pages = array();
 
                 if ( $history->have_posts() ) {
@@ -215,6 +215,9 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
             </div>
 
             <div class="fb-6-slider">
+
+                <a class="history-slider-nav history-slide-left"></a>
+                <a class="history-slider-nav history-slide-right"></a>
                 <?php
                     $history = new WP_Query( array ( 'orderby' => 'title', 'order' => 'asc', 'category_name' => 'history' ) );
 
@@ -222,14 +225,9 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                         $num = 0;
                         $current = ' current';
 
-
+                        echo '<div class="history-slides' . $current . '">';
                         while ( $history->have_posts() ) {
                             $history->the_post();
-
-                            if ($num%3 == 0) {
-                                echo '<div class="history-slides' . $current . '">';
-                                $current = '';
-                            }
 
                             echo '<div class="fb-6-col-1">';
                                 if ( has_post_thumbnail() ) {
@@ -239,31 +237,22 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                                 }
                                 echo "<div class='history-title'>" . get_the_title() . "</div>";
                                 echo "<div class='history-description'>" . get_the_content() . "</div>";
-
-                            echo '</div>';
-                            $num++;
-                            if ($num == 3 || $num > 3) {
-                                echo '</div>';
-                                $num = 0;
-                            }
-
-                        }
-
-                        if ($num < 3) {
                             echo '</div>';
                         }
+
+                        echo '</div>';
                     }
 
                 ?>
 
                 <div class="red-shadow"></div>
                 <div class="history-controls">
-                    <a class="hc-icon-1 current"></a>
-                    <a class="hc-icon-2"></a>
-                    <a class="hc-icon-3"></a>
-                    <a class="hc-icon-4"></a>
-                    <a class="hc-icon-5"></a>
-                    <a class="hc-icon-6"></a>
+                    <a class="hc-icon-1" data-index="1"></a>
+                    <a class="hc-icon-2" data-index="3"></a>
+                    <a class="hc-icon-3" data-index="6"></a>
+                    <a class="hc-icon-4" data-index="9"></a>
+                    <a class="hc-icon-5" data-index="12"></a>
+                    <a class="hc-icon-6" data-index="15"></a>
                 </div>
             </div>
         </div>
