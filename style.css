@@ -4854,5 +4854,5 @@ a.quality-permalink {
     font-size: 15px;
 }
 .product-sidebar .current-menu-item a{
-    color: #000;
+    color: #000 !important;
 }
