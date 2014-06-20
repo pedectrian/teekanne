@@ -4853,6 +4853,6 @@ a.quality-permalink {
     color: #666;
     font-size: 15px;
 }
-.product-sidebar .current-menu-item {
+.product-sidebar .current-menu-item a{
     color: #000;
 }
