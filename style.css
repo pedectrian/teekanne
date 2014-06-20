@@ -4577,6 +4577,7 @@ h2.list-title {
 .quality-slides {
     margin-top: 40px;
     padding-left: 50px;
+    overflow: hidden;
 }
 .quality-col-1 {
     width: 314px;
@@ -4814,6 +4815,6 @@ a.quality-permalink {
 }
 
 .quality-slide-right {
-    right: 35px;
+    right: -20px;
     background: url('images/quality-slide-right.png') no-repeat;
 }

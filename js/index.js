@@ -130,7 +130,7 @@ var historySlider = {
 
 var qualitySlider = {
     init: function() {
-        qualitySlider.slideWidth = 1130;
+        qualitySlider.slideWidth = 580;
         qualitySlider.currentPosition = 0;
         qualitySlider.slides = $('.quality-col-1');
         qualitySlider.numberOfSlides = qualitySlider.slides.length;
@@ -146,9 +146,10 @@ var qualitySlider = {
         //tell the buttons what to do when clicked
         $('.quality-slider-nav').on('click', function(){
             if ($(this).hasClass('quality-slide-left')) {
-                mainSlider.currentPosition = mainSlider.currentPosition-1;
+                qualitySlider.currentPosition = qualitySlider.currentPosition-1;
             } else {
-                mainSlider.currentPosition = mainSlider.currentPosition+1;
+
+                qualitySlider.currentPosition = qualitySlider.currentPosition+1;
             }
 
             //hide/show controls
