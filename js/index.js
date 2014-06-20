@@ -205,18 +205,18 @@ $(document).ready(function(){
         hideMenu();
     });
 
-    if(!$('.current-menu-item').prev().length) {
+    if(!$('.product-sidebar .current-menu-item').prev().length) {
         $('.tea-left').hide();
     }
     if(!$('.current-menu-item').next().length) {
         $('.tea-right').hide();
     }
     $('.tea-left').on('click', function(){
-        document.location = $('.current-menu-item').prev().find('a').attr('href');
+        document.location = $('.product-sidebar .current-menu-item').prev().find('a').attr('href');
     });
 
     $('.tea-right').on('click', function(){
-        document.location = $('.current-menu-item').next().find('a').attr('href');
+        document.location = $('.product-sidebar .current-menu-item').next().find('a').attr('href');
     });
 
 });
