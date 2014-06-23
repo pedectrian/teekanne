@@ -4831,8 +4831,12 @@ a.quality-permalink {
     right: -20px;
     background: url('images/quality-slide-right.png') no-repeat;
 }
-.single {
+.single,
+.page-template-default{
     background: url('images/single-page-left.png') top left no-repeat;
+}
+.page-template-default {
+    margin-top: 50px;
 }
 .post-wrap-right {
     background: url('images/single-page-right.png') top right no-repeat;

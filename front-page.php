@@ -219,7 +219,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 <a class="history-slider-nav history-slide-left"></a>
                 <a class="history-slider-nav history-slide-right"></a>
                 <?php
-                    $history = new WP_Query( array ( 'orderby' => 'title', 'order' => 'asc', 'category_name' => 'history' ) );
+                    $history = new WP_Query( array ( 'posts_per_page' => 20, 'orderby' => 'title', 'order' => 'asc', 'category_name' => 'history' ) );
 
                     if ( $history->have_posts() ) {
                         echo '<div class="history-slides">';
