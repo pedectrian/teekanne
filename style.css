@@ -4832,13 +4832,14 @@ a.quality-permalink {
     background: url('images/quality-slide-right.png') no-repeat;
 }
 .single,
-.page-template-default{
+.page-template-default {
     background: url('images/single-page-left.png') top left no-repeat;
 }
 
 .page {
     margin-top: 30px;
 }
+.single,
 .page-template-default {
     margin-top: 50px;
 }
