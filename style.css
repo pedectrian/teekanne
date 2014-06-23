@@ -4835,7 +4835,7 @@ a.quality-permalink {
 .page-template-default{
     background: url('images/single-page-left.png') top left no-repeat;
 }
-.page-template-default {
+.page {
     margin-top: 50px;
 }
 .post-wrap-right {
