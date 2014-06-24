@@ -18,12 +18,12 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
 } else {
     get_header();
     ?>
-    <div class="clear"></div>
+    <div class="clear" id="home"></div>
     <!-- Header condition2 starts here -->
 
     <!-- **********************header ends************************* -->
     <!-- **********************slider************************* -->
-    <div class="homepage_top_feature">
+    <div class="homepage_top_feature" id="products">
         <div class="slider_img_container">
             <div class="slides-wrapper">
                 <a class="slider-nav slide-left"></a>
@@ -104,7 +104,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
         </div>
         <div class="fb-2-woman"></div>
     </div>
-    <div class="front_block_3_right">
+    <div class="front_block_3_right" id="field-to-cup">
         <div class="front_block_3">
             <div class="history-block">
                 <div class="hb-1 myriad">
@@ -174,7 +174,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
         <div class="adonisc font-25 uppercase text-center color-white">НАТУРАЛЬНЫХ ИНГРЕДИЕНТОВ — <br/>
             ВАШ ПУТЬ К ГАРМОНИИ С ПРИРОДОЙ </div>
     </div>
-    <div class="front_block_5">
+    <div class="front_block_5" id="company">
         <div class="fb-5-wrap">
             <div class="fb-5-left myriad">
                 <h1 class="font-50 color-red">О компании <img style="margin-left: 10px;" src="<?php echo get_stylesheet_directory_uri();?>/images/about-company-icon.png"></h1>
@@ -244,7 +244,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
 
                 <div class="red-shadow"></div>
                 <div class="history-controls">
-                    <a class="hc-icon-1" data-index="1"></a>
+                    <a class="hc-icon-1" data-index="0"></a>
                     <a class="hc-icon-2" data-index="3"></a>
                     <a class="hc-icon-3" data-index="6"></a>
                     <a class="hc-icon-4" data-index="9"></a>
@@ -254,7 +254,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
             </div>
         </div>
     </div>
-    <div class="front_block_7">
+    <div class="front_block_7" id="our-values">
         <div class="fb-7-wrap">
             <div class="fb-7-left">
                 <h1 class="adonisc font-50 color-red" style="line-height: 50px;margin-top: 40px;">Гарантия качества от производителя</h1>
@@ -304,7 +304,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
         <div class="adonisc font-25 uppercase text-center color-red">Teekanne представлен во всех магазинах страны.<br />
             Чтобы узнать, где находится ближайший к вам спросите у нас.  </div>
     </div>
-    <div class="front_block_9">
+    <div class="front_block_9" id="worldwide">
         <div class="fb-9-wrap">
             <div class="fb-9-left">
                 <h1 class="adonisc font-65 color-red" style="line-height: 50px;">Teekanne<br />

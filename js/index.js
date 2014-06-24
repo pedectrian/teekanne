@@ -81,7 +81,9 @@ var historySlider = {
         //tell the buttons what to do when clicked
         $('.history-controls a').on('click', function(){
             if($(this).attr('data-index') > historySlider.numberOfSlides) {return false;}
+
             historySlider.currentPosition = $(this).attr('data-index');
+
             $('.history-controls a.current').removeClass('current');
             $(this).addClass('current');
 
@@ -94,9 +96,9 @@ var historySlider = {
         $('.history-slider-nav').on('click', function(){
 
             if ($(this).hasClass('history-slide-left')) {
-                historySlider.currentPosition = historySlider.currentPosition-1;
+                historySlider.currentPosition = parseInt(historySlider.currentPosition)-1;
             } else {
-                historySlider.currentPosition = historySlider.currentPosition+1;
+                historySlider.currentPosition = parseInt(historySlider.currentPosition)+1;
             }
 
             //hide/show controls
@@ -109,7 +111,7 @@ var historySlider = {
         if(position==0){ $('.history-slide-left').hide() }
         else { $('.history-slide-left').show() }
         //hide right arrow is slide position is last slide
-        if(position==historySlider.numberOfSlides-1){ $('.history-slide-right').hide() }
+        if(position>=historySlider.numberOfSlides-3){ $('.history-slide-right').hide() }
         else { $('.history-slide-right').show() }
 
         var current = $('.history-controls a').filter(function(){
@@ -122,6 +124,7 @@ var historySlider = {
         }
     },
     moveSlide: function () {
+        console.log(historySlider.currentPosition);
         $('#historySlidesHolder')
             .animate({'marginLeft' : historySlider.slideWidth*(-historySlider.currentPosition)});
     }
@@ -176,6 +179,18 @@ var qualitySlider = {
  * Created by pedectrian on 09.06.14.
  */
 $(document).ready(function(){
+    var isFrontPage = false;
+    if($('body').hasClass('home')) {
+        isFrontPage = true;
+    }
+
+    if(isFrontPage) {
+        if (location.hash) {
+            window.scrollTo(0, 0);
+
+            scrollToBlock(location.hash)
+        }
+    }
     $('.menu-box').on('click', function(){
         $('#menu').toggle('slow', function(){var b = 1;});
     });
@@ -219,6 +234,14 @@ $(document).ready(function(){
         document.location = $('.product-sidebar .current-menu-item').next().find('a').attr('href');
     });
 
+    $(".sf-menu a").click(function() {
+        if(isFrontPage) {
+            scrollToBlock($(this).attr('href'));
+        } else {
+            document.location = $('#logo a').attr('href') + $(this).attr('href');
+        }
+    });
+
 });
 function hideMenu() {
     if($('#menu').is(':visible')) {
@@ -226,3 +249,9 @@ function hideMenu() {
     }
 }
 
+function scrollToBlock(id) {
+    hideMenu();
+    $('html, body').animate({
+        scrollTop: ($(id).offset().top -60)
+    }, 2000);
+}

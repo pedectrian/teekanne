@@ -1,5 +1,5 @@
 
-    <div class="footer-wrap">
+    <div class="footer-wrap" id="contacts">
         <div class="footer-left-text">
             <h1 class="adonisc font-65 color-red" style="margin-bottom: 50px;">РАССЫЛКА:</h1>
 
