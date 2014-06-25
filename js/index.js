@@ -69,7 +69,7 @@ var mainSlider = {
         if(current.length) {
             $('.tea-list li a.current').removeClass('current');
             current.addClass('current');
-        } else if(parseInt($('.tea-list li a.current').attr('data-index')) < mainSlider.currentPosition) {
+        } else if(parseInt($('.tea-list li a.current').attr('data-index')) > mainSlider.currentPosition) {
             $('.tea-list li a.current').removeClass('current');
             $('.tea-list li a.current').parent().prev().find('a').addClass('current');
         }
