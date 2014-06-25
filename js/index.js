@@ -66,7 +66,7 @@ var mainSlider = {
             return $(this).attr('data-index') == mainSlider.currentPosition
         });
 
-        if(current) {
+        if(current.length) {
             $('.tea-list li a.current').removeClass('current');
             current.addClass('current');
         }
