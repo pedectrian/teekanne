@@ -40,7 +40,7 @@ var mainSlider = {
 
             if($(this).attr('data-index') > mainSlider.numberOfSlides) {return false;}
 
-            mainSlider.currentPosition = $(this).attr('data-index');
+            mainSlider.currentPosition = parseInt($(this).attr('data-index'));
 
             //hide/show controls
             mainSlider.manageNav(mainSlider.currentPosition);
@@ -67,6 +67,7 @@ var mainSlider = {
             return $(this).attr('data-index') == mainSlider.currentPosition
         });
 
+        console.log(mainSlider.currentPosition);
         if(next.length) {
             current.removeClass('current');
             next.addClass('current');
