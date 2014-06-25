@@ -62,16 +62,17 @@ var mainSlider = {
         $('#captionsHolder')
             .animate({'marginLeft' : mainSlider.slideWidth*(-mainSlider.currentPosition)});
 
-        var current = $('.tea-list li a').filter(function(){
+        var current = $('.tea-list li a.current');
+        var next = $('.tea-list li a').filter(function(){
             return $(this).attr('data-index') == mainSlider.currentPosition
         });
 
-        if(current.length) {
-            $('.tea-list li a.current').removeClass('current');
-            current.addClass('current');
-        } else if(parseInt($('.tea-list li a.current').attr('data-index')) > mainSlider.currentPosition) {
-            $('.tea-list li a.current').removeClass('current');
-            $('.tea-list li a.current').parent().prev().find('a').addClass('current');
+        if(next.length) {
+            current.removeClass('current');
+            next.addClass('current');
+        } else if(parseInt(current.attr('data-index')) > mainSlider.currentPosition) {
+            current.removeClass('current');
+            current.prev('a').addClass('current');
         }
 
     }
