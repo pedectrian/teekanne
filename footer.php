@@ -31,20 +31,20 @@
                 право требовать возмещения убытков.</p>
         </div>
     </div>
-<!--    <div class="footer">-->
-<!--        <div class="container_24">-->
-<!--            <div class="grid_24 footer-slogan">-->
-<!--                <div class="footer-slogan-left">The german attitude towards tea. since 1882</div>-->
-<!--                <div class="footer-slogan-right">Немецкое отношение к чаю с 1882 года</div>-->
-<!--            </div>-->
-<!---->
-<!--            <div cla-->ss="gr//id_24">
-//                <div class="<!--footer-menu">-->
-<!--                    <?php dynamic_sidebar( 'footer-menu' ); ?>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div class="footer">
+        <div class="container_24">
+            <div class="grid_24 footer-slogan">
+                <div class="footer-slogan-left">The german attitude towards tea. since 1882</div>
+                <div class="footer-slogan-right">Немецкое отношение к чаю с 1882 года</div>
+            </div>
+
+            <div class="grid_24">
+                <div class="footer-menu">
+                    <?php dynamic_sidebar( 'footer-menu' ); ?>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 <!-- ***********************Copyright Ends************************* -->
