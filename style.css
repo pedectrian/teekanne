@@ -923,13 +923,13 @@ input[type="submit"].search-button:hover {
     height: 440px;
     padding: 0;
 }
-.homepage_top_feature img{
-    height: 400px;
+.homepage_top_feature img {
+    height: 459px;
     margin: 0 auto;
-    width: 400px;
+    width: 380px;
     margin-top: 20px;
     position: absolute;
-    top: 44px;
+    top: 4px;
     left: 50%;
     margin-left: -280px;
 }
