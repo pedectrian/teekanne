@@ -2,7 +2,7 @@
     <div class="footer-wrap" id="contacts">
         <div class="footer-left-text">
             <h1 class="adonisc font-65 color-red" style="margin-bottom: 50px;">РАССЫЛКА:</h1>
-            <?php echo do_shortcode( '[contact-form-7 id="2596" title="Подписка в футере"]' ); ?>
+            <?php echo do_shortcode( '[contact-form-7 id="271" title="Контактная форма в футере"]' ); ?>
             <div class="always-on-touch">
                 <div class="color-red font-25">Мы всегда на связи!</div>
                 <p>Мы стараемся работать так, чтобы Вы были довольны.
