@@ -62,8 +62,14 @@ var mainSlider = {
         $('#captionsHolder')
             .animate({'marginLeft' : mainSlider.slideWidth*(-mainSlider.currentPosition)});
 
-        $('.tea-list li a.current').removeClass('current');
-        $('.tea-list li:nth-child(' + (mainSlider.currentPosition +1) + ') a').addClass('current');
+        var current = $('.tea-list li a').filter(function(){
+            return $(this).attr('data-index') == mainSlider.currentPosition
+        });
+
+        if(current) {
+            $('.tea-list li a.current').removeClass('current');
+            current.addClass('current');
+        }
 
     }
 };

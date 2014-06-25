@@ -36,9 +36,10 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 ));
 
                 $slides = new WP_Query(array(
-                    'post_type' => 'page',
-                    'meta_key' => '_wp_page_template',
-                    'meta_value' => 'tea-template.php'
+                    'post_type'      => 'page',
+                    'meta_key'       => '_wp_page_template',
+                    'meta_value'     => 'tea-template.php',
+                    'posts_per_page' => 50
                 ));
 
                 if ( $slides->have_posts() ) {
@@ -71,7 +72,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     <h2 class="list-title">НАШИ ЧАИ:</h2>
                     <ul class="tea-list">
                         <?php
-                        $slides = array(0, 5, 2, 3, 2, 2);
+                        $slides = array(0, 1, 2, 3, 2, 2);
                         $slide = 0;
                         $i = 0;
                         if ( $history->have_posts() ) {
