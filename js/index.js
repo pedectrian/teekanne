@@ -242,6 +242,11 @@ $(document).ready(function(){
         }
     });
 
+    $('.scroll-to').on('click', function(e){
+        e.preventDefault();
+        scrollToBlock($(this).attr('href')) ;
+    });
+
 });
 function hideMenu() {
     if($('#menu').is(':visible')) {

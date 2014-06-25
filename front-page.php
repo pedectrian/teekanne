@@ -219,7 +219,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 <a class="history-slider-nav history-slide-left"></a>
                 <a class="history-slider-nav history-slide-right"></a>
                 <?php
-                    $history = new WP_Query( array ( 'posts_per_page' => 20, 'orderby' => 'title', 'order' => 'asc', 'category_name' => 'history' ) );
+                    $history = new WP_Query( array ( 'posts_per_page' => 0, 'orderby' => 'title', 'order' => 'asc', 'category_name' => 'history' ) );
 
                     if ( $history->have_posts() ) {
                         echo '<div class="history-slides">';
@@ -302,36 +302,18 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     <div class="front_block_8">
         <div class="adonisc font-60 text-center color-red">Где купить:</div>
         <div class="adonisc font-25 uppercase text-center color-red">Teekanne представлен во всех магазинах страны.<br />
-            Чтобы узнать, где находится ближайший к вам спросите у нас.  </div>
+            Чтобы узнать, где находится ближайший к вам <a href="#contacts" class="scroll-to underline">спросите у нас</a>.  </div>
     </div>
     <div class="front_block_9" id="worldwide">
         <div class="fb-9-wrap">
             <div class="fb-9-left">
-                <h1 class="adonisc font-65 color-red" style="line-height: 50px;">Teekanne<br />
-                    в мире</h1>
-                <a href="#" class="color-red" style="display: inline-block; margin-bottom: 10px;">http://www.teekanne.com/</a>
-                <p class="myriad">TEEKANNE GmbH & Co. KG (Дюссельдорф, Германия) опирается на 130-летний опыт
-                    производства чая и постоянно развивает эту отрасль, разрабатывая новые продукты.
-                    TEEKANNE является лидером на немецком рынке, самом крупном в мире по производству
-                    фруктовых и травяных чаев.<br/>
-                    Сегодня TEEKANNE Group насчитывает 1500 сотрудников и имеет фабрики по производству
-                    чая и управления по его продаже в семи странах по всему миру.  Наши дистрибьюторы
-                    продают чай в более чем 50 странах.<br/>
-                    Головной офис TEEKANNE Group находится в Дюссельдорфе, Германия. Именно отсюда мы
-                    отправляем нашу продукцию по всему миру. В Дюссельдорфе так же расположен крупнейший
-                    завод. Здесь мы создаем наши знаменитые купажи, обрабатывая в год до 12 000 тонн
-                    сырьевых материалов для Германии и на экспорт. Ежегодно только в Дюссельдорфе фасуют
-                    до 2 миллионов чайных пакетиков, а всего TEEKANNE Group производит до 7 миллионов
-                    пакетиков в год. Если сложить все эти пакетики вместе они обернут планету больше 39 раз,
-                    образовав линию в 1,575,000 км.</p>
-                <p class="myriad">
-                    DQS (Немецкое общество по сертификации систем менеджмента) регулярно проводит
-                    проверки нашей компании и большинства наших заводов. Мы получили сертификат DIN EN
-                    ISO 9001, который говорит о том, что наша система менеджмента соответствует требованиям
-                    европейских стандартов. И это неудивительно, потому что все наши фабрики пользуются
-                    современными технологиями по системе ХАССП.</p>
+                <?php
+                    $worldwide = get_page_by_path('teekanne-worldwide');
+                ?>
+                <h1 class="adonisc font-65 color-red" style="line-height: 50px;width: 272px;"><?php echo $worldwide->post_title; ?></h1>
+                <?php echo $worldwide->post_content; ?>
+                <a href="<?php echo $worldwide->guid; ?>" class="red-button">Читать полностью</a>
 
-                <a href="#" class="red-button">Читать полностью</a>
             </div>
         </div>
     </div>

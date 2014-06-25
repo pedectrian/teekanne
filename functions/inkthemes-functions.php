@@ -225,6 +225,16 @@ function onepage_widgets_init() {
         'before_title' => '<h3>',
         'after_title' => '</h3>',
     ));
+
+    register_sidebar(array(
+        'name' => "Меню футера",
+        'id' => 'footer-menu',
+        'description' => THE_PRIMARY_WIDGET,
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '<h3>',
+        'after_title' => '</h3>',
+    ));
 }
 
 /** Register sidebars by running onepage_widgets_init() on the widgets_init hook. */

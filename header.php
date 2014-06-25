@@ -33,6 +33,7 @@
     </head>
 
     <body <?php body_class(); ?>>
+        <div class="right-helper">
         <img style="display: none;" class="share-image" src="<?php echo get_stylesheet_directory_uri();?>/images/social_share.png">
         <!-- *********************Header Logo and menu Wrapper************************************** -->
 
