@@ -72,14 +72,14 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     <h2 class="list-title">НАШИ ЧАИ:</h2>
                     <ul class="tea-list">
                         <?php
-                        $slides = array(0, 5, 2, 3, 2, 2);
+                        $indexes = array(0, 5, 2, 3, 2, 2);
                         $slide = 0;
                         $i = 0;
                         if ( $history->have_posts() ) {
                             $current = 'current';
                             while ( $history->have_posts() ) {
                                 $history->the_post();
-                                $slide += $slides[$i];
+                                $slide += $indexes[$i];
 
                                 echo '<li><a data-index="' . $slide . '" class="'.$current.'" data-slide-id="'.get_the_ID().'">'.get_the_title().'</a></li>';
                                 $current = ' ';
@@ -100,10 +100,10 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     <div class="front_block_2">
         <div class="captions-wrap">
         <?php
-        if ( $history->have_posts() ) {
+        if ( $slides->have_posts() ) {
             $current = ' current';
-            while ( $history->have_posts() ) {
-                $history->the_post();
+            while ( $slides->have_posts() ) {
+                $slides->the_post();
                 $bottomDescr = get_post_meta( get_the_ID(), 'bottom-description' );
                 echo '<div class="slide-bottom-description '.$current.'" data-slide-id="'.get_the_ID().'">';
                     echo '<div class="adonisc uppercase text-center color-white">'.$bottomDescr[0] . '</div>';
