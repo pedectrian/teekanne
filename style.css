@@ -4067,6 +4067,7 @@ smaller than 320px
 }
 body {
     background: #f8f3ef;
+    padding-bottom: 200px;
 }
 .front_block_2 {
     background: url('images/front_block_2.png') top center repeat-x;
