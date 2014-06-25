@@ -4184,6 +4184,10 @@ body {
 .slide-text-right p {
     color: #FFF;
     font-size: 13px;
+
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 20px;
 }
 .tea-list {
     margin: 0;
@@ -4802,6 +4806,11 @@ a.quality-permalink {
     padding-bottom: 50px;
     height: 60px;
     background: #BE2C37 url('images/footer.png') center 13px no-repeat;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
 }
 
 .quality-slide-left,

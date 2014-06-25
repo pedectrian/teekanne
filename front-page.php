@@ -29,23 +29,28 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 <a class="slider-nav slide-left"></a>
                 <a class="slider-nav slide-right"></a>
                 <?php
-                $history = new WP_Query( array ( 'orderby' => 'date', 'order' => 'desc', 'category_name' => 'tea-slide' ) );
-                $pages = array();
+                $history = new WP_Query(array(
+                    'orderby' => 'date',
+                    'order' => 'desc',
+                    'category_name' => 'tea-slide',
+                ));
 
-                if ( $history->have_posts() ) {
+                $slides = new WP_Query(array(
+                    'post_type' => 'page',
+                    'meta_key' => '_wp_page_template',
+                    'meta_value' => 'tea-template.php'
+                ));
+
+                if ( $slides->have_posts() ) {
                     $current = ' current';
-                    while ( $history->have_posts() ) {
-                        $history->the_post();
-
-                        $linkToTeaPage = get_post_meta( get_the_ID(), 'link_to_tea_page' );
+                    while ( $slides->have_posts() ) {
+                        $slides->the_post();
 
                         echo "<div class='slide". $current . "' data-slide-id='" . get_the_ID() ."'>
                                 <div class='slide-text-right'>
                                 <div class='adonisc font-25 color-red'>" . get_the_title() . "</div>
-                                <p>" . get_the_content() . "</p>";
-                        if (isset($linkToTeaPage[0])){
-                            echo "<a href='" . $linkToTeaPage[0] ."' class='red-button'>Узнать больше о продукте</a>";
-                        }
+                                <p>" . get_the_excerpt() . "</p>";
+                            echo "<a href='" . get_post_permalink() ."' class='red-button'>Узнать больше о продукте</a>";
 
                         echo "</div>";
 
@@ -66,13 +71,18 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     <h2 class="list-title">НАШИ ЧАИ:</h2>
                     <ul class="tea-list">
                         <?php
+                        $slides = [0, 5, 2, 3, 2, 2];
+                        $slide = 0;
+                        $i = 0;
                         if ( $history->have_posts() ) {
                             $current = 'current';
                             while ( $history->have_posts() ) {
                                 $history->the_post();
+                                $slide += $slides[$i];
 
-                                echo '<li><a class="'.$current.'" data-slide-id="'.get_the_ID().'">'.get_the_title().'</a></li>';
+                                echo '<li><a data-index="' . $slide . '" class="'.$current.'" data-slide-id="'.get_the_ID().'">'.get_the_title().'</a></li>';
                                 $current = ' ';
+                                $i++;
                             }
                         }
                         ?>

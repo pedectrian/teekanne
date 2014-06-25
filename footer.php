@@ -2,7 +2,13 @@
     <div class="footer-wrap" id="contacts">
         <div class="footer-left-text">
             <h1 class="adonisc font-65 color-red" style="margin-bottom: 50px;">РАССЫЛКА:</h1>
-            <?php echo do_shortcode( '[contact-form-7 id="271" title="Контактная форма в футере"]' ); ?>
+            <?php
+                if (do_shortcode( '[contact-form-7 id="271" title="Контактная форма в футере"]') != '[contact-form-7 404 "Not Found"]') {
+                    echo do_shortcode( '[contact-form-7 id="271" title="Контактная форма в футере"]');
+                } else {
+                    echo do_shortcode( '[contact-form-7 id="2596" title="Подписка в футере"]' );
+                }
+            ?>
             <div class="always-on-touch">
                 <div class="color-red font-25">Мы всегда на связи!</div>
                 <p>Мы стараемся работать так, чтобы Вы были довольны.
@@ -25,20 +31,20 @@
                 право требовать возмещения убытков.</p>
         </div>
     </div>
-    <div class="footer">
-        <div class="container_24">
-            <div class="grid_24 footer-slogan">
-                <div class="footer-slogan-left">The german attitude towards tea. since 1882</div>
-                <div class="footer-slogan-right">Немецкое отношение к чаю с 1882 года</div>
-            </div>
-
-            <div class="grid_24">
-                <div class="footer-menu">
-                    <?php dynamic_sidebar( 'footer-menu' ); ?>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--    <div class="footer">-->
+<!--        <div class="container_24">-->
+<!--            <div class="grid_24 footer-slogan">-->
+<!--                <div class="footer-slogan-left">The german attitude towards tea. since 1882</div>-->
+<!--                <div class="footer-slogan-right">Немецкое отношение к чаю с 1882 года</div>-->
+<!--            </div>-->
+<!---->
+<!--            <div cla-->ss="gr//id_24">
+//                <div class="<!--footer-menu">-->
+<!--                    <?php dynamic_sidebar( 'footer-menu' ); ?>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
 </div>
 </div>
 <!-- ***********************Copyright Ends************************* -->

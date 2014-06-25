@@ -38,7 +38,11 @@ var mainSlider = {
             $('.tea-list li a.current').removeClass('current');
             $(this).addClass('current');
 
-            mainSlider.currentPosition = $(this).parent().index();
+            if($(this).attr('data-index') > mainSlider.numberOfSlides) {return false;}
+
+            mainSlider.currentPosition = $(this).attr('data-index');
+
+            //hide/show controls
             mainSlider.manageNav(mainSlider.currentPosition);
             mainSlider.moveSlide();
         });
