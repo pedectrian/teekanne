@@ -72,7 +72,7 @@ var mainSlider = {
             next.addClass('current');
         } else if(parseInt(current.attr('data-index')) > mainSlider.currentPosition) {
             current.removeClass('current');
-            current.prev('a').addClass('current');
+            current.parent().prev('li').find('a').addClass('current');
         }
 
     }
