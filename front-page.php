@@ -313,7 +313,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     <div class="front_block_8">
         <div class="adonisc font-60 text-center color-red">Где купить:</div>
         <div class="adonisc font-25 uppercase text-center color-red">Teekanne представлен во всех магазинах страны.<br />
-            Чтобы узнать, где находится ближайший к вам <a href="#contacts" class="scroll-to underline">спросите у нас</a>.  </div>
+            Чтобы узнать, где находится ближайший к вам <a href="#contacts" class="show-contact-form underline">спросите у нас</a>.  </div>
     </div>
     <div class="front_block_9" id="worldwide">
         <div class="fb-9-wrap">

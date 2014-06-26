@@ -262,7 +262,26 @@ $(document).ready(function(){
         scrollToBlock($(this).attr('href')) ;
     });
 
+    $('.show-contact-form').on('click', function(e){
+        e.preventDefault();
+       showPopup();
+    });
+    $('.popup-cancel').on('click', function(e){
+        e.preventDefault();
+        hidePopup();
+    });
+
+    $('.wpcf7-mail-sent-ok').live('create', function(){
+        hidePopup();
+    })
 });
+function showPopup() {
+    $('.popup-wrap').fadeIn('slow');
+}
+
+function hidePopup() {
+    $('.popup-wrap').fadeOut('slow');
+}
 function hideMenu() {
     if($('#menu').is(':visible')) {
         $('#menu').toggle('slow', function(){var b = 1;});

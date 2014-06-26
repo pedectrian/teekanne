@@ -47,6 +47,20 @@
     </div>
 </div>
 </div>
+    <div class="popup-wrap">
+        <div class="popup">
+            <a class="popup-cancel"></a>
+            <h1 class="adonisc font-30 color-red text-center" >СПРОСИТЕ У НАС:</h1>
+
+            <?php
+            if (do_shortcode( '[contact-form-7 id="306" title="Контактная форма в попапе"]') != '[contact-form-7 404 "Not Found"]') {
+                echo do_shortcode( '[contact-form-7 id="306" title="Контактная форма в попапе"]');
+            } else {
+                echo do_shortcode( '[contact-form-7 id="2596" title="Подписка в футере"]' );
+            }
+            ?>
+        </div>
+    </div>
 <!-- ***********************Copyright Ends************************* -->
 <?php wp_footer(); ?>
 </body>
