@@ -271,9 +271,30 @@ $(document).ready(function(){
         hidePopup();
     });
 
-    $('.wpcf7-mail-sent-ok').live('create', function(){
-        hidePopup();
-    })
+    $('.history-switch-btn-1').on('click', function(e){
+        e.preventDefault();
+        if ($(this).hasClass('active')) {return false;}
+
+        $('.history-switch-btn-2').removeClass('active');
+        $(this).addClass('active');
+
+        $('.history-switch-2').fadeOut('fast', function(){
+            $('.history-switch-1').fadeIn('slow');
+        });
+
+    });
+
+    $('.history-switch-btn-2').on('click', function(e){
+        e.preventDefault();
+        if ($(this).hasClass('active')) {return false;}
+
+        $('.history-switch-btn-1').removeClass('active');
+        $(this).addClass('active');
+
+        $('.history-switch-1').fadeOut('fast', function(){
+            $('.history-switch-2').fadeIn('slow');
+        });
+    });
 });
 function showPopup() {
     $('.popup-wrap').fadeIn('slow');
