@@ -46,6 +46,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     $current = ' current';
                     while ( $slides->have_posts() ) {
                         $slides->the_post();
+                        $slideImage = get_post_meta( get_the_ID(), 'slider-image-url' );
 
                         echo "<div class='slide". $current . "' data-slide-id='" . get_the_ID() ."'>
                                 <div class='slide-text-right'>
@@ -54,8 +55,9 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                             echo "<a href='" . get_post_permalink() ."' class='red-button'>Узнать больше о продукте</a>";
 
                         echo "</div>";
-
-                                if ( has_post_thumbnail() ) {
+                                if (isset($slideImage[0])) {
+                                    echo "<img class='custom-slide' src='{$slideImage[0]}'>";
+                                } else if ( has_post_thumbnail() ) {
                                     the_post_thumbnail('tea_page_thumbnail');
                                 }
 

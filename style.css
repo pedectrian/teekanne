@@ -4983,3 +4983,13 @@ a.quality-permalink {
     right: 5px;
     top: 5px;
 }
+.custom-slide {
+    height: 348px !important;
+    margin: 0 auto !important;
+    width: 411px !important;
+    margin-top: 20px !important;
+    position: absolute !important;
+    top: 60px !important;
+    left: 50% !important;
+    margin-left: -280px !important;
+}
