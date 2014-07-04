@@ -7,6 +7,7 @@ function onepage_setup() {
     add_theme_support('post-thumbnails');
     add_image_size('history_thumbnail', 364, 208, true);
     add_image_size('tea_page_thumbnail', 408, 523, true);
+    add_image_size('main_slider_thumbnail', 550, 483, true);
     add_image_size('post_thumbnail', 600, 250, true);
     add_image_size('post_thumbnail_1', 70, 70, true);
     /* ----------------------------------------------------------------------------------- */

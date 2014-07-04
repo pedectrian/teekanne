@@ -58,7 +58,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                                 if (isset($slideImage[0])) {
                                     echo "<img class='custom-slide' src='{$slideImage[0]}'>";
                                 } else if ( has_post_thumbnail() ) {
-                                    the_post_thumbnail('tea_page_thumbnail');
+                                    the_post_thumbnail('main_slider_thumbnail');
                                 }
 
                         $current = '';
