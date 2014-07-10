@@ -164,9 +164,9 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 </div>
                 <div class="hb-4">
                     <div class="adonisc font-30 uppercase color-red">
-                        ЧАЙ /<br />
-                        ФРУКТОВЫЙ<br />
-                        И ТРАВЯНОЙ ЧАЙ
+                        <a class="color-red" href="http://ready2dev.ru/teekanne/?page_id=307">ЧАЙ</a> /<br />
+                        <a class="color-red" href="http://ready2dev.ru/teekanne/?page_id=366">ФРУКТОВЫЙ<br />
+                        И ТРАВЯНОЙ ЧАЙ</a>
                     </div>
                     <ul class="history-list">
                         <li><a class="current" href="http://ready2dev.ru/teekanne/?page_id=307">Истоки</a></li>
@@ -316,7 +316,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     $worldwide = get_page_by_path('teekanne-worldwide');
                 ?>
                 <h1 class="adonisc font-65 color-red" style="line-height: 50px;width: 272px;"><?php echo $worldwide->post_title; ?></h1>
-                <?php echo $worldwide->post_content; ?>
+                <div class="adonisc" style="font-size: 13px;"><?php echo $worldwide->post_content; ?>
                 <a href="<?php echo $worldwide->guid; ?>" class="red-button">Читать полностью</a>
 
             </div>

@@ -4308,7 +4308,7 @@ h2.list-title {
 .fb-5-left {
     width: 375px;
     color: #f8f3ef;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .fb-6-wrap {
@@ -5002,12 +5002,12 @@ a.quality-permalink {
     top: 50%;
 }
 .prev-page {
-    background: url('images/left.png') no-repeat;
+    background: url('images/quality-slide-left.png') no-repeat;
     left: 50%;
     margin-left: -640px;
 }
 .next-page {
-    background: url('images/right.png') no-repeat;
+    background: url('images/quality-slide-right.png') no-repeat;
     right: 50%;
     margin-right: -640px;
 }
