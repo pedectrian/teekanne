@@ -15,11 +15,11 @@ get_header();
             <div class="post-inner" style="position: relative;">
 
                 <?php if($prevPage): ?>
-                    <a href="<?php echo $prevPage; ?>" class="inner-navigation prev-page"></a>
+                    <a href="<?php echo $prevPage[0]; ?>" class="inner-navigation prev-page"></a>
                 <?php endif; ?>
 
                 <?php if($nextPage): ?>
-                    <a href="<?php echo $nextPage; ?>" class="inner-navigation next-page"></a>
+                    <a href="<?php echo $nextPage[0]; ?>" class="inner-navigation next-page"></a>
                 <?php endif; ?>
 
                 <div class="post-title"><?php the_title(); ?></div>
