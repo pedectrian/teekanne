@@ -8,8 +8,20 @@ get_header();
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
     <div class="post-wrap">
+        <?php $nextPage = get_post_meta( get_the_ID(), 'nextPage' ); ?>
+        <?php $prevPage = get_post_meta( get_the_ID(), 'prevPage' ); ?>
+
         <div class="post-wrap-right">
-            <div class="post-inner">
+            <div class="post-inner" style="position: relative;">
+
+                <?php if($prevPage): ?>
+                    <a href="<?php echo $prevPage; ?>" class="inner-navigation prev-page"></a>
+                <?php endif; ?>
+
+                <?php if($nextPage): ?>
+                    <a href="<?php echo $nextPage; ?>" class="inner-navigation next-page"></a>
+                <?php endif; ?>
+
                 <div class="post-title"><?php the_title(); ?></div>
                 <div class="post-description"><?php the_content(); ?></div>
             </div>

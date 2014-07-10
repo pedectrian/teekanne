@@ -4270,7 +4270,7 @@ h2.list-title {
     width: 700px;
 }
 .hb-3 {
-    top: 325px;
+    top: 353px;
     left: 227px;
     width: 467px;
     font-size: 13px;
@@ -4992,4 +4992,22 @@ a.quality-permalink {
     top: 60px !important;
     left: 50% !important;
     margin-left: -280px !important;
+}
+
+.inner-navigation {
+    width: 58px;
+    height: 70px;
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+}
+.prev-page {
+    background: url('images/left.png') no-repeat;
+    left: 50%;
+    margin-left: -640px;
+}
+.next-page {
+    background: url('images/right.png') no-repeat;
+    right: 50%;
+    margin-left: -640px;
 }
