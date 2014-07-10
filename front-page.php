@@ -215,11 +215,6 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 <p class="color-white">За свою 130-летнюю историю семейная компания TEEKANNE успела доказать, что именно ясное видение, грамотный расчет и инновационный подход являются причинами ее успеха и  процветания. </p>
             </div>
             <div class="fb-6-right color-white adonisc">
-                <p class="color-white adonisc">It all started with the innovative idea of our founders
-                    Rudolf Anders and Eugen Nissle to sell the natural
-                    product tea in a blended and packaged form. Thus, tea
-                    as a branded product with a consistent premium
-                    quality was born.</p>
 
                 <p class="color-white adonisc">Мы предлагаем Вам подробнее узнать об истории компании TEEKANNE: </p>
             </div>
