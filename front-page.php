@@ -169,7 +169,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                         И ТРАВЯНОЙ ЧАЙ
                     </div>
                     <ul class="history-list">
-                        <li><a class="current" href="#">Истоки</a></li>
+                        <li><a class="current" href="http://ready2dev.ru/teekanne/?page_id=307">Истоки</a></li>
                         <li><a href="http://ready2dev.ru/teekanne/?page_id=307">Сбор урожая</a></li>
                         <li><a href="http://ready2dev.ru/teekanne/?page_id=307">Обработка</a></li>
                         <li><a href="http://ready2dev.ru/teekanne/?page_id=307">Упаковка</a></li>
