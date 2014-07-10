@@ -160,7 +160,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                         индийская провинция к западу от Ассама, Нилгири, на юго-западе Индии и Формоза
                         (ныне Тайвань), известная своим непревзойденным чаем улун.</p>
 
-                    <a href="#" class="red-button">Читать полностью</a>
+                    <a href="http://ready2dev.ru/teekanne/?page_id=307" class="red-button">Читать полностью</a>
                 </div>
                 <div class="hb-4">
                     <div class="adonisc font-30 uppercase color-red">
@@ -170,10 +170,10 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                     </div>
                     <ul class="history-list">
                         <li><a class="current" href="#">Истоки</a></li>
-                        <li><a href="#">Сбор урожая</a></li>
-                        <li><a href="#">Обработка</a></li>
-                        <li><a href="#">Упаковка</a></li>
-                        <li><a href="#">Контроль качества</a></li>
+                        <li><a href="http://ready2dev.ru/teekanne/?page_id=307">Сбор урожая</a></li>
+                        <li><a href="http://ready2dev.ru/teekanne/?page_id=307">Обработка</a></li>
+                        <li><a href="http://ready2dev.ru/teekanne/?page_id=307">Упаковка</a></li>
+                        <li><a href="http://ready2dev.ru/teekanne/?page_id=307">Контроль качества</a></li>
                     </ul>
                 </div>
             </div>
