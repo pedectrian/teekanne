@@ -3000,7 +3000,7 @@ body {
 
 .front_block_6 {
     padding-top: 50px;
-    height: 700px;
+    height: 775px;
     background: #c12236;
 }
 
@@ -3230,7 +3230,7 @@ h2.list-title {
 .fb-6-slider {
     position: relative;
     background-size: 1100px 500px;
-    height: 530px;
+    height: 565px;
 }
 .fb-7-wrap {
     width: 1130px;
@@ -3248,7 +3248,7 @@ h2.list-title {
 .fb-9-wrap {
     width: 1130px;
     margin: 0 auto;
-    background: url('images/world-wide-bg.png') -35px -2px repeat-x;
+    background: url('images/world-wide-bg.png') -67px -2px repeat-x;
     background-size: 1130px;
 }
 .fb-9-left {
@@ -3523,7 +3523,7 @@ a.quality-permalink {
 }
 .history-slides {
     width: 1100px;
-    height: 410px;
+    height: 450px;
     overflow: hidden;
 }
 .history-image {

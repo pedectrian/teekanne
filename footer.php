@@ -1,7 +1,7 @@
 
     <div class="footer-wrap" id="contacts">
         <div class="footer-left-text">
-            <h1 class="adonisc font-65 color-red" style="margin-bottom: 50px;">РАССЫЛКА:</h1>
+            <h1 class="adonisc font-50 color-red" style="margin-bottom: 50px;">Рассылка:</h1>
             <?php
                 if (do_shortcode( '[contact-form-7 id="271" title="Контактная форма в футере"]') != '[contact-form-7 404 "Not Found"]') {
                     echo do_shortcode( '[contact-form-7 id="271" title="Контактная форма в футере"]');

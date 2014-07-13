@@ -143,7 +143,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                         детям. </p>
                 </div>
                 <div class="hb-3 myriad">
-                    <div class="adonisc font-45 color-red" style="line-height: 48px;margin-bottom: 10px;">Путь от плантации<br />
+                    <div class="adonisc font-50 color-red" style="line-height: 48px;margin-bottom: 10px;">Путь от плантации<br />
                     до чашки</div>
                     <p >Несмотря на то, что чай появился в Китае почти 5000 лет назад, прошло несколько тысяч лет
                         прежде чем он добрался до других уголков земли. Основные регионы, где выращивают чай
@@ -199,11 +199,11 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 </p>
 
                 <p>
-                    Сегодня TEEKANNE является одной из ведущих компаний по
+                    Сегодня TEEKANNE является одной из ведущих компаний<br /> по
                     производству чая и продолжает работать над созданием
                     новых чайных вариаций, с помощью исключительно
                     натуральных ингредиентов, тщательно отобранных нашими
-                    специалистами по всему миру.</p>
+                    специалистами<br /> по всему миру.</p>
             </div>
         </div>
     </div>
@@ -265,8 +265,8 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 <h1 class="adonisc font-50 color-red" style="line-height: 50px;margin-top: 40px;">Гарантия качества от производителя</h1>
             </div>
             <div class="fb-7-right adonisc">
-                <p class="color-grey adonisc" style="margin-top: 50px">В TEEKANNE главное – насладиться ароматной чашкой чая. Для этого
-                    наши специалисты объездили весь мир в поисках лучших ингредиентов,
+                <p class="color-grey adonisc" style="margin-top: 50px">В TEEKANNE главное – насладиться ароматной чашкой чая.</br>
+                    Для этого наши специалисты объездили весь мир в поисках лучших ингредиентов,
                     а разработчики создали восхитительные купажи в наших современных
                     лабораториях, чтобы бережно упакованный в пакетики чай TEEKANNE
                     радовал Вас своим великолепным вкусом.</p>
@@ -305,7 +305,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
     </div>
 
     <div class="front_block_8">
-        <div class="adonisc font-60 text-center color-red">Где купить:</div>
+        <div class="adonisc font-50 text-center color-red">Где купить:</div>
         <div class="adonisc font-25 uppercase text-center color-red">Teekanne представлен во всех магазинах страны.<br />
             Чтобы узнать, где находится ближайший к вам <a href="#contacts" class="show-contact-form underline">спросите у нас</a>.  </div>
     </div>
@@ -315,7 +315,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 <?php
                     $worldwide = get_page_by_path('teekanne-worldwide');
                 ?>
-                <h1 class="adonisc font-65 color-red" style="line-height: 50px;width: 272px;"><?php echo $worldwide->post_title; ?></h1>
+                <h1 class="adonisc font-50 color-red" style="line-height: 50px;width: 242px;"><?php echo $worldwide->post_title; ?></h1>
                 <div class="adonisc" style="font-size: 13px;"><?php echo $worldwide->post_content; ?>
                 <a href="<?php echo $worldwide->guid; ?>" class="red-button">Читать полностью</a>
 
