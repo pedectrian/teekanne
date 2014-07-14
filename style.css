@@ -2984,7 +2984,7 @@ body {
     height: 950px;
 }
 .front_block_3 .history-block {
-    background: url('images/front_block_3.png') -127px 0 no-repeat;
+    background: url('images/front_block_3.png') -127px 30px no-repeat;
     background-size: 1400px 850px;
     height: 850px;
 }
@@ -3173,14 +3173,14 @@ h2.list-title {
     width: 700px;
 }
 .hb-3 {
-    top: 353px;
+    top: 385px;
     left: 227px;
     width: 467px;
     font-size: 13px;
     color: #666;
 }
 .hb-4 {
-    top: 335px;
+    top: 385px;
     right: 135px;
     width: 249px;
 }
