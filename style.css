@@ -3762,6 +3762,7 @@ a.quality-permalink {
 }
 .single,
 .search-results,
+.search-no-results,
 .page-template-default {
     background: url('images/single-page-left.png') top left no-repeat;
 }
@@ -3773,7 +3774,8 @@ a.quality-permalink {
 .page-template-default {
     margin-top: 50px;
 }
-.search-results {
+.search-results
+.search-no-results {
     margin-top: 75px;
 }
 .post-wrap-right {
@@ -3781,6 +3783,7 @@ a.quality-permalink {
 }
 .single .right-helper,
 .search-results .right-helper,
+.search-no-results .right-helper,
 .page  .right-helper{
     background: url('images/single-page-right.png') top right no-repeat;
 }

@@ -15,14 +15,18 @@ get_header();
             <div class="container_24">
                 <div class="post-title"><?php echo "Результаты поиска: " . get_search_query(); ?></div>
             </div>
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
             <div class="post-inner">
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
                 <a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a>
                 <div class="post-description"><?php the_excerpt(); ?></div>
-            </div>
 
 <?php endwhile; ?>
+<?php else : ?>
+    <div class="post-description">Ничего не найдено</div>
 <?php endif; ?>
+
+            </div>
         </div>
     </div>
     <!-- ***********************Featured Text Area Block************************* -->
