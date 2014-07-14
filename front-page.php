@@ -180,9 +180,9 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
         </div>
     </div>
     <div class="front_block_4">
-        <div class="adonisc font-60 text-center color-white">100%</div>
-        <div class="adonisc font-25 uppercase text-center color-white">НАТУРАЛЬНЫХ ИНГРЕДИЕНТОВ — <br/>
-            ВАШ ПУТЬ К ГАРМОНИИ С ПРИРОДОЙ </div>
+        <div class="adonisc uppercase text-center color-white"><div class="font-65">130 лет</div>
+        <div class="font-25">уникального опыта ради каждой секунды</div>
+        <div class="font-25">наслаждения чаепитием</div></div>
     </div>
     <div class="front_block_5" id="company">
         <div class="fb-5-wrap">
@@ -317,7 +317,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                 ?>
                 <h1 class="adonisc font-50 color-red" style="line-height: 50px;width: 242px;"><?php echo $worldwide->post_title; ?></h1>
                 <div class="adonisc" style="font-size: 13px;"><?php echo $worldwide->post_content; ?>
-                <a href="<?php echo $worldwide->guid; ?>" class="red-button">Читать полностью</a>
+<!--                <a href="--><?php //echo $worldwide->guid; ?><!--" class="red-button">Читать полностью</a>-->
 
             </div>
         </div>
