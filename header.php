@@ -9,6 +9,9 @@
         <?php } else {
             
         } ?>
+        <meta property="og:title" content="ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE." />
+        <meta property="og:description" content="№1 в Европе среди фруктовых и травяных чаев, теперь и в Росиии TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые." />
+        <meta property="og:image" content="<?php echo get_stylesheet_directory_uri();?>/images/social_share.png"" />
         <link rel="profile" href="http://gmpg.org/xfn/11" />
 
         <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/jquery-1.11.1.min.js" type="text/javascript"></script>
@@ -81,7 +84,7 @@
                             <a class="share-button" onclick="Share.facebook(document.location.href,'ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE.','<?php echo get_stylesheet_directory_uri();?>/images/social_share.png','№1 в Европе среди фруктовых и травяных чаев, теперь и в Росиии TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')">Fb.com</a>/
                             <a class="share-button" onclick="Share.vkontakte(document.location.href,'ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE.','<?php echo get_stylesheet_directory_uri();?>/images/social_share.png','№1 в Европе среди фруктовых и травяных чаев, теперь и в Росиии TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')">Vk.com</a>/
                             <a class="share-button" onclick="Share.odnoklassniki(document.location.href,'DESC')">Odnoklassniki.ru</a>/
-                            <a class="share-button" onclick="Share.twitter(document.location.href,'T№1 в Европе среди фруктовых и травяных чаев, теперь и в Росиии TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')">Twitter.com</a>/
+                            <a class="share-button" onclick="Share.twitter(document.location.href,'№1 в Европе среди фруктовых и травяных чаев, теперь и в Росиии TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')">Twitter.com</a>/
                             <a class="share-button" onclick="Share.gplus(document.location.href)">GooglePlus</a>
 
                             <input type="button" class="share-cancel" value=""/>
