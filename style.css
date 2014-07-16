@@ -2990,6 +2990,7 @@ body {
 .front_block_3 {
     background: url('images/front_block_3_left.png') top left no-repeat;
     height: 950px;
+    font-size: 13px;
 }
 .front_block_3 .history-block {
     background: url('images/front_block_3.png') -127px 30px no-repeat;
