@@ -3508,13 +3508,11 @@ h2.list-title {
 }
 .quality-description {
     color: #666666;
-    font-size: 13px;
-    font-family: "Myriad Pro Regular",serif;
+    font-size: 14px;
 }
 a.quality-permalink {
     color: #FFF;
     background: #B42A3A;
-    font-family: "Myriad Pro Regular",serif;
     text-transform: uppercase;
     font-size: 13px;
     padding: 5px 10px;
