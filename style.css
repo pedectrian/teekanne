@@ -32,10 +32,18 @@ custom.css and it will override the style in this file. You have been warned! :)
 }
 @font-face {
     font-family: 'Myriad-Pro';
-    src: url('fonts/Myriad-Pro.eot');
-    src: url('fonts/Myriad-Pro.eot?#iefix') format('embedded-opentype'),
-        url('fonts/Myriad-Pro.woff') format('woff'),
-        url('fonts/Myriad-Pro.ttf') format('truetype');
+    /*src: url('fonts/Myriad-Pro.eot');*/
+    /*src: url('fonts/Myriad-Pro.eot?#iefix') format('embedded-opentype'),*/
+        /*url('fonts/Myriad-Pro.woff') format('woff'),*/
+        /*url('fonts/Myriad-Pro.ttf') format('truetype');*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+
+    src: url('fonts/adonisc-webfont.eot');
+    src: url('fonts/adonisc-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/adonisc-webfont.woff') format('woff'),
+    url('fonts/adonisc-webfont.ttf') format('truetype'),
+    url('fonts/adonisc-webfont.svg#adonisc') format('svg');
     font-weight: normal;
     font-style: normal;
 }
