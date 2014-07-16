@@ -3518,6 +3518,7 @@ a.quality-permalink {
     padding: 5px 10px;
     display: inline-block;
     margin-top: 10px;
+    line-height: 22px;
 }
 .history-slides {
     width: 1100px;
