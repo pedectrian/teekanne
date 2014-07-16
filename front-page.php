@@ -286,7 +286,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                             echo "</div>";
                         }
                         echo "<div class='quality-title'>" . get_the_title() . "</div>";
-                        echo "<div class='quality-description'>" . get_the_excerpt() . "</div>";
+                        echo "<div class='quality-description adonisc'>" . get_the_excerpt() . "</div>";
 
                         echo "<a class='quality-permalink' href='" . get_the_permalink() . "'>Читать полностью</a>";
                         echo '</div>';
