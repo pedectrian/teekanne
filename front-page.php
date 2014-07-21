@@ -282,7 +282,7 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
                         echo '<div class="quality-col-1">';
                         if ( has_post_thumbnail() ) {
                             echo "<div class='quality-image'>";
-                            the_post_thumbnail('history_thumbnail');
+                            the_post_thumbnail('quality_slider_thumbnail');
                             echo "</div>";
                         }
                         echo "<div class='quality-title'>" . get_the_title() . "</div>";
