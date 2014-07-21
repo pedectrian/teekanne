@@ -31,6 +31,7 @@ get_header();
                     <div class="post-description">
                         <div class="container_24">
                             <div class="grid_10">
+                                <div class="color-red font-30"><?php the_title(); ?></div>
                                 <?php the_content(); ?>
                             </div>
                             <div class="grid_14">
