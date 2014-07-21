@@ -118,8 +118,8 @@
                                 <div class="search-icon"></div>
                             </div>
                             <div class="share">
-                                <div class="vk-share-icon" onclick="Share.facebook(document.location.href,'ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE.','<?php echo get_stylesheet_directory_uri();?>/images/social_share.png','№1 в Европе среди фруктовых и травяных чаев, теперь и в Росиии TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')"></div>
-                                <div class="fb-share-icon" onclick="Share.vkontakte(document.location.href,'ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE.','<?php echo get_stylesheet_directory_uri();?>/images/social_share.png','№1 в Европе среди фруктовых и травяных чаев, теперь и в Росиии TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')"></div>
+                                <div class="vk-share-icon" onclick="Share.vkontakte(document.location.href,'ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE.','<?php echo get_stylesheet_directory_uri();?>/images/social_share.png','№1 в Европе среди фруктовых и травяных чаев, теперь и в Росиии TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')"></div>
+                                <div class="fb-share-icon" onclick="Share.facebook(document.location.href,'ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE.','<?php echo get_stylesheet_directory_uri();?>/images/social_share.png','№1 в Европе среди фруктовых и травяных чаев, теперь и в Росиии TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')"></div>
                                 <a class="rest-share">Другие</a>
                             </div>
                         </div>
