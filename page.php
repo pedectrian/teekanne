@@ -24,9 +24,9 @@ get_header();
 
                 <div class="post-title"><?php the_title(); ?></div>
                 <div class="post-description"><?php the_content(); ?></div>
+                <div class="clear"></div>
+                <a href="<?php echo home_url(); ?>" class="color-red font-20 uppercase" style="display: block;">&larr; назад</a>
             </div>
-            <div class="clear"></div>
-            <a href="<?php echo home_url(); ?>" class="color-red font-20 uppercase" style="display: block;">&larr; назад</a>
         </div>
     </div>
 <?php endwhile; ?>
