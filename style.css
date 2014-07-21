@@ -533,8 +533,9 @@ input[type="submit"].search-button:hover {
 }
 
 #logo {
-    padding: 10px 0 7px 0;
+    padding: 10px 0 13px 0;
     height: 40px;
+    text-align: center;
 }
 
 #logo img {
@@ -559,7 +560,7 @@ input[type="submit"].search-button:hover {
     padding: 0px 35px 0 10px;
     border: 1px solid #FFF;
     border-radius: 15px;
-    margin: 15px 0 0 360px;
+    margin: 19px 0 0 0;
     line-height: 23px;
     background: url('images/menu-bg.png') no-repeat 69px 6px;
 }
@@ -3036,7 +3037,7 @@ body {
 #menu .sf-menu li {
     float: none;
     display: block;
-    text-align: center;
+    text-align: left;
 }
 #menu .sf-menu li a{
     font-family: 'Myriad-Pro', serif !important;
@@ -3367,9 +3368,12 @@ h2.list-title {
 #MainNav {
     position: relative;
 }
-#MainNav .search {
+#logo {
+    position: relative;
+}
+#logo .search {
     position: absolute;
-    right: 80px;
+    right: 125px;
     top: 20px;
 }
 .search-icon {
@@ -3399,6 +3403,19 @@ h2.list-title {
     background: url('images/vk_socialshare.png') no-repeat;
 
     cursor: pointer;
+}
+.rest-share {
+    color: #FFF;
+    line-height: 22px;
+    cursor: pointer;
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    vertical-align: top;
+    font-size: 13px;
+}
+.rest-share:hover {
+    text-decoration: underline;
 }
 .search-bar {
     position: absolute;
@@ -3771,7 +3788,8 @@ a.quality-permalink {
 .single,
 .search-results,
 .search-no-results,
-.page-template-default {
+.page-template-default,
+.page-template-quality-template-php{
     background: url('images/single-page-left.png') top left no-repeat;
 }
 
@@ -3779,7 +3797,8 @@ a.quality-permalink {
     margin-top: 30px;
 }
 .single,
-.page-template-default {
+.page-template-default,
+.page-template-quality-template-php{
     margin-top: 50px;
 }
 .search-results
@@ -3835,10 +3854,10 @@ a.quality-permalink {
 
 .footer-slogan-right {
     position: absolute;
-    top: -9px;
-    right: 183px;
+    top: -5px;
+    right: 148px;
     color: #FFF;
-    font-size: 17px;
+    font-size: 16px;
 }
 .footer-menu {
     text-align: center;

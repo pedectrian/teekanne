@@ -99,25 +99,28 @@
             <div class="container_24">
                 <div class="grid_24">
                     <div class="grid_3 alpha">
-                        <div id="logo">
-                            <a href="<?php echo home_url(); ?>"><img src="<?php if (onepage_get_option('onepage_logo') != '') { ?><?php echo onepage_get_option('onepage_logo'); ?><?php } else { ?><?php echo get_template_directory_uri(); ?>/images/logo.png<?php } ?>" alt="<?php bloginfo('name'); ?>" /></a></div>
-                    </div>
-                    <div class="grid_21 omega">
+
                         <div id="MainNav">
                             <div class="hover-menu">
                                 <span class="menu-box">Меню</span>
-                            <?php if (onepage_get_option('onepage_nav') != '') { ?><a href="#" class="mobile_nav closed"><?php echo stripslashes(onepage_get_option('onepage_nav')); ?><span></span></a>
-                            <?php } else { ?> <a href="#" class="mobile_nav closed">Mobile Menu<span></span></a>
-                            <?php } ?>
-                            <?php onepage_nav(); ?>
+                                <?php if (onepage_get_option('onepage_nav') != '') { ?><a href="#" class="mobile_nav closed"><?php echo stripslashes(onepage_get_option('onepage_nav')); ?><span></span></a>
+                                <?php } else { ?> <a href="#" class="mobile_nav closed">Mobile Menu<span></span></a>
+                                <?php } ?>
+                                <?php onepage_nav(); ?>
                             </div>
 
+                        </div>
+                    </div>
+                    <div class="grid_21 omega">
+                        <div id="logo">
+                            <a style="margin-left: -100px;" href="<?php echo home_url(); ?>"><img src="<?php if (onepage_get_option('onepage_logo') != '') { ?><?php echo onepage_get_option('onepage_logo'); ?><?php } else { ?><?php echo get_template_directory_uri(); ?>/images/logo.png<?php } ?>" alt="<?php bloginfo('name'); ?>" /></a>
                             <div class="search">
                                 <div class="search-icon"></div>
                             </div>
                             <div class="share">
-                                <div class="vk-share-icon"></div>
-                                <div class="fb-share-icon"></div>
+                                <div class="vk-share-icon" onclick="Share.facebook(document.location.href,'ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE.','<?php echo get_stylesheet_directory_uri();?>/images/social_share.png','№1 в Европе среди фруктовых и травяных чаев, теперь и в Росиии TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')"></div>
+                                <div class="fb-share-icon" onclick="Share.vkontakte(document.location.href,'ДОБРО ПОЖАЛОВАТЬ В МИР ЧАЯ TEEKANNE.','<?php echo get_stylesheet_directory_uri();?>/images/social_share.png','№1 в Европе среди фруктовых и травяных чаев, теперь и в Росиии TEEKANNE – компания с более чем 130-летней историей. Наша коллекция премиальных чаев содержит как классические черные и зеленые чаи, так и оригинальные травяные и фруктовые.')"></div>
+                                <a class="rest-share">Другие</a>
                             </div>
                         </div>
 

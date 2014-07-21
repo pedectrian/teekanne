@@ -33,7 +33,7 @@
     </div>
     <div class="footer">
         <div class="container_24">
-            <div class="grid_24 footer-slogan">
+            <div class="grid_24 footer-slogan" style="text-transform: uppercase;">
                 <div class="footer-slogan-left">The german attitude towards tea. since 1882</div>
                 <div class="footer-slogan-right">Немецкое отношение к чаю с 1882 года</div>
             </div>

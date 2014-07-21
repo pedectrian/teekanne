@@ -229,7 +229,7 @@ $(document).ready(function(){
         $('.share-bar').fadeOut('slow');
     });
 
-    $('.fb-share-icon, .vk-share-icon').on('click', function(){
+    $('.rest-share').on('click', function(){
         $('.share-bar').fadeIn('slow');
 
         hideMenu();
