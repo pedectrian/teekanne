@@ -30,12 +30,10 @@ get_header();
 
                     <div class="post-description">
                         <div class="container_24">
-                            <div class="grid_10">
+                            <div class="grid_24">
                                 <div class="color-red font-30"><?php the_title(); ?></div>
+                                <?php echo get_the_post_thumbnail( get_the_ID(), 'quality_thumbnail', array('class'=> 'alignright') ); ?>
                                 <?php the_content(); ?>
-                            </div>
-                            <div class="grid_14">
-                                <?php echo get_the_post_thumbnail( get_the_ID(), 'quality_thumbnail' ); ?>
                             </div>
                         </div>
                     </div>
