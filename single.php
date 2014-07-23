@@ -6,6 +6,9 @@ get_header();
 
 <!-- Start the Loop. -->
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+    <div class="post-wrap">
+        <?php $nextPage = get_post_meta( get_the_ID(), 'nextPage' ); ?>
+        <?php $prevPage = get_post_meta( get_the_ID(), 'prevPage' ); ?>
 
 
         <div class="post-wrap-right">
