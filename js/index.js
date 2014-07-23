@@ -194,10 +194,7 @@ var qualitySlider = {
  * Created by pedectrian on 09.06.14.
  */
 $(document).ready(function(){
-    var isFrontPage = false;
-    if($('body').hasClass('home')) {
-        isFrontPage = true;
-    }
+    var isFrontPage = true;
 
     if(isFrontPage) {
         if (location.hash) {
