@@ -3941,3 +3941,6 @@ a.quality-permalink {
     right: 50%;
     margin-right: -640px;
 }
+.mr-30 {
+    margin-right: 30px !important;
+}
