@@ -254,7 +254,7 @@ $(document).ready(function(){
         if ($('.product-sidebar .current-menu-item').prev().find('a').length) {
             document.location = $('.product-sidebar .current-menu-item').prev().find('a').attr('href');
         } else {
-            document.location = $('.product-sidebar li:last-child').find('a').attr('href');
+            document.location = $('.product-sidebar li').last().find('a').attr('href');
         }
 
     });
