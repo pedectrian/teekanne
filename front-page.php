@@ -201,10 +201,11 @@ if ('posts' == get_option('show_on_front') && onepage_get_option('re_nm') !== 'o
             <div class="fb-6-left">
                 <h1 class="adonisc font-50 color-white">История</h1>
                 <p class="color-white">За свою 130-летнюю историю семейная компания TEEKANNE успела доказать, что именно ясное видение, грамотный расчет и инновационный подход являются причинами ее успеха и  процветания. </p>
+                <p class="color-white adonisc">Мы предлагаем Вам подробнее узнать об истории компании TEEKANNE: </p>
             </div>
             <div class="fb-6-right color-white adonisc">
 
-                <p class="color-white adonisc">Мы предлагаем Вам подробнее узнать об истории компании TEEKANNE: </p>
+
             </div>
 
             <div class="fb-6-slider">
