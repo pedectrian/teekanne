@@ -263,7 +263,7 @@ $(document).ready(function(){
         if (document.location = $('.product-sidebar .current-menu-item').next().find('a').length) {
             document.location = $('.product-sidebar .current-menu-item').next().find('a').attr('href');
         } else {
-            document.location = $('.product-sidebar .sub-menu:first-child li:first-child').find('a').attr('href');
+            document.location = $('.product-sidebar li:first-child').first().find('.sub-menu').find('a').attr('href');
         }
 
     });
