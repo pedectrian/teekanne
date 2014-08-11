@@ -253,7 +253,7 @@ $(document).ready(function(){
     $('.tea-left').on('click', function(){
         if ($('.product-sidebar .current-menu-item').prev().find('a').length) {
             document.location = $('.product-sidebar .current-menu-item').prev().find('a').attr('href');
-        } else if($('.product-sidebar .current-menu-parent').prev().find('.sub-menu li:last-child a').length) {
+        } else if($('.product-sidebar .current-menu-parent').prev().length) {
             document.location = $('.product-sidebar .current-menu-parent').prev().find('.sub-menu li:last-child a').attr('href');
         } else {
             document.location = $('.product-sidebar li').last().find('.sub-menu').find('li:last-child a').attr('href');
@@ -264,6 +264,8 @@ $(document).ready(function(){
     $('.tea-right').on('click', function(){
         if (document.location = $('.product-sidebar .current-menu-item').next().find('a').length) {
             document.location = $('.product-sidebar .current-menu-item').next().find('a').attr('href');
+        } else if($('.product-sidebar .current-menu-parent').next().length) {
+            document.location = $('.product-sidebar .current-menu-parent').next().find('.sub-menu li:first-child a').attr('href');
         } else {
             document.location = $('.product-sidebar li:first-child').first().find('.sub-menu').find('a').attr('href');
         }
