@@ -256,7 +256,8 @@ $(document).ready(function(){
         } else if($('.product-sidebar .current-menu-parent').prev().length) {
             document.location = $('.product-sidebar .current-menu-parent').prev().find('.sub-menu li:last-child a').attr('href');
         } else {
-            document.location = $('.product-sidebar li').last().find('.sub-menu').find('li:last-child a').attr('href');
+            alert('last');
+            document.location = $('.product-sidebar li:last-child').find('.sub-menu li:last-child a').attr('href');
         }
 
     });
