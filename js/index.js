@@ -254,7 +254,7 @@ $(document).ready(function(){
         if ($('.product-sidebar .current-menu-item').prev().find('a').length) {
             document.location = $('.product-sidebar .current-menu-item').prev().find('a').attr('href');
         } else {
-            document.location = $('.product-sidebar li:last-child').find('a').attr('href');
+            document.location = $('.product-sidebar .sub-menu li:last-child').find('a').attr('href');
         }
 
     });
@@ -263,7 +263,7 @@ $(document).ready(function(){
         if (document.location = $('.product-sidebar .current-menu-item').next().find('a').length) {
             document.location = $('.product-sidebar .current-menu-item').next().find('a').attr('href');
         } else {
-            document.location = $('.product-sidebar li:first-child').find('a').attr('href');
+            document.location = $('.product-sidebar .sub-menu li:first-child').find('a').attr('href');
         }
 
     });
