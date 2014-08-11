@@ -244,18 +244,28 @@ $(document).ready(function(){
         hideMenu();
     });
 
-    if(!$('.product-sidebar .current-menu-item').prev().length) {
-        $('.tea-left').hide();
-    }
-    if(!$('.current-menu-item').next().length) {
-        $('.tea-right').hide();
-    }
+//    if(!$('.product-sidebar .current-menu-item').prev().length) {
+//        $('.tea-left').hide();
+//    }
+//    if(!$('.current-menu-item').next().length) {
+//        $('.tea-right').hide();
+//    }
     $('.tea-left').on('click', function(){
-        document.location = $('.product-sidebar .current-menu-item').prev().find('a').attr('href');
+        if ($('.product-sidebar .current-menu-item').prev().find('a').length) {
+            document.location = $('.product-sidebar .current-menu-item').prev().find('a').attr('href');
+        } else {
+            document.location = $('.product-sidebar li').last().find('a').attr('href');
+        }
+
     });
 
     $('.tea-right').on('click', function(){
-        document.location = $('.product-sidebar .current-menu-item').next().find('a').attr('href');
+        if (document.location = $('.product-sidebar .current-menu-item').next().find('a').length) {
+            document.location = $('.product-sidebar .current-menu-item').next().find('a').attr('href');
+        } else {
+            document.location = $('.product-sidebar li').first().find('a').attr('href');
+        }
+
     });
 
     $(".sf-menu a").click(function() {
