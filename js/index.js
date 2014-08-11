@@ -21,9 +21,18 @@ var mainSlider = {
         $('.slider-nav').on('click', function(){
 
             if ($(this).hasClass('slide-left')) {
-                mainSlider.currentPosition = mainSlider.currentPosition-1;
+                if (mainSlider.currentPosition == 0) {
+                    mainSlider.currentPosition = mainSlider.numberOfSlides -1;
+                } else {
+                    mainSlider.currentPosition = mainSlider.currentPosition-1;
+                }
             } else {
-                mainSlider.currentPosition = mainSlider.currentPosition+1;
+                if (mainSlider.currentPosition == mainSlider.numberOfSlides - 1) {
+                    mainSlider.currentPosition = 0;
+                } else {
+                    mainSlider.currentPosition = mainSlider.currentPosition+1;
+                }
+
             }
 
             //hide/show controls
@@ -49,11 +58,13 @@ var mainSlider = {
     },
     manageNav: function (position) {
         //hide left arrow if position is first slide
-        if(position==0){ $('.slide-left').hide() }
-        else { $('.slide-left').show() }
-        //hide right arrow is slide position is last slide
-        if(position==mainSlider.numberOfSlides-1){ $('.slide-right').hide() }
-        else { $('.slide-right').show() }
+//        if(position==0){ $('.slide-left').hide() }
+//        else { $('.slide-left').show() }
+//        //hide right arrow is slide position is last slide
+//        if(position==mainSlider.numberOfSlides-1){
+//            $('.slide-right').hide()
+//        }
+//        else { $('.slide-right').show() }
     },
     moveSlide: function () {
         $('#slidesHolder')
@@ -67,7 +78,6 @@ var mainSlider = {
             return $(this).attr('data-index') == mainSlider.currentPosition
         });
 
-        console.log(mainSlider.currentPosition);
         if(next.length) {
             current.removeClass('current');
             next.addClass('current');
@@ -123,10 +133,10 @@ var historySlider = {
     },
     manageNav: function (position) {
         //hide left arrow if position is first slide
-        if(position==0){ $('.history-slide-left').hide() }
+        if(position==-1){ $('.history-slide-left').hide() }
         else { $('.history-slide-left').show() }
         //hide right arrow is slide position is last slide
-        if(position>=historySlider.numberOfSlides-3){ $('.history-slide-right').hide() }
+        if(position>=historySlider.numberOfSlides-2){ $('.history-slide-right').hide() }
         else { $('.history-slide-right').show() }
 
         var current = $('.history-controls a').filter(function(){
@@ -194,15 +204,17 @@ var qualitySlider = {
  * Created by pedectrian on 09.06.14.
  */
 $(document).ready(function(){
-    var isFrontPage = true;
+    var isFrontPage = $('body').hasClass('home');
 
-    if(isFrontPage) {
-        if (location.hash) {
-            window.scrollTo(0, 0);
+    //if(isFrontPage) {
+    if (location.hash) {
+        window.scrollTo(0, 0);
 
-            scrollToBlock(location.hash)
-        }
+        scrollToBlock(location.hash)
     }
+//    } else {
+//
+//    }
     $('.menu-box').on('click', function(){
         $('#menu').toggle('slow', function(){var b = 1;});
     });
