@@ -3631,7 +3631,7 @@ a.quality-permalink {
 .product-sidebar {
     width: 1130px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 50px !important;
 }
 .product-sidebar ul.menu,
 .product-sidebar ul.sub-menu{
