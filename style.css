@@ -3624,14 +3624,13 @@ a.quality-permalink {
 }
 
 .product-sidebar-wrap {
-    margin-top: 57px;
+    margin-top: 70px !important;
     background: #f8f3ef;
     margin-bottom: 30px;
 }
 .product-sidebar {
     width: 1130px;
     margin: 0 auto;
-    margin-top: 50px !important;
 }
 .product-sidebar ul.menu,
 .product-sidebar ul.sub-menu{
